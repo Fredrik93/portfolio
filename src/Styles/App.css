@@ -7,3 +7,10 @@
 #img-logo{
     width:25vh;
 }
+#navlink{
+    color: white;
+}
+#navlink:hover{
+    color: rgb(236, 230, 230); 
+    border-bottom: 0.1px solid white;
+}

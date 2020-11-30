@@ -6,12 +6,14 @@ function NavBar() {
 
     return (
         <Navbar id="navbar" expand="lg" >
-            <Navbar.Brand href="#home"> <img id="img-logo" alt="uic-logo" src={logo} /> </Navbar.Brand>
+            <Navbar.Brand href="/"> <img id="img-logo" alt="uic-logo" src={logo} /> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
+                    <Nav.Link id="navlink" href="/"> Home</Nav.Link>
+                    <Nav.Link id="navlink" href="/services">Tjänster</Nav.Link>
+                    <Nav.Link id="navlink" href="/about-us">Om Oss</Nav.Link>
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
