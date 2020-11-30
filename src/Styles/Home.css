@@ -2,9 +2,9 @@
 .dark-overlay{
     height: 90vh;
     width: 100%;
-    background:rgba(26, 108, 122, 0.8);
+    background:#1A6C7A;
+    opacity: 95%;
     overflow: hidden;
-  
 }
 .start-page-layout{
         position: relative;
@@ -35,15 +35,11 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1vh;
-
-    
 }
 #servicesBtn:hover{
     background-color: #1A6C7A;
     border:2px solid #1A6C7A;
     letter-spacing: 0.1vh;
-
-   
 }
 #aboutUsBtn{
     background-color: white;
@@ -60,5 +56,4 @@
     border:2px solid #1A6C7A;
     color:white;
     letter-spacing: 0.1vh;
-
 }
