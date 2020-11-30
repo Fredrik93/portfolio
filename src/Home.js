@@ -11,9 +11,9 @@ function Home() {
     return (
 
         <Fragment>
-            <div className="start-page-image" >
+            <div className="start-page-layout" >
                 <header className="dark-overlay">
-                    <img style={homePageImage} alt="homepage-vegetation" src={vegetationImage} />
+                    <img className="homepage-image" alt="homepage-vegetation" src={vegetationImage} />
                     <section className="centered-text">
                         <h3> hemsidor | design </h3>
                         <h1 >Ullman IT Consulting</h1>
