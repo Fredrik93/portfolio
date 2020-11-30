@@ -1,0 +1,57 @@
+
+.dark-overlay{
+    height: 90vh;
+    width: 100%;
+    background:rgba(26, 108, 122, 0.8);
+    overflow: hidden;
+  
+}
+.start-page-layout{
+        position: relative;
+        text-align: center;
+        color:white;
+}
+.centered-text{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+}
+.centered-text h1{
+        font-size: 8vh;
+}
+.homepage-image{
+        object-fit: cover;
+        opacity: 0.4;
+        width: 100%;
+        height: 90vh;
+}
+#servicesBtn{
+    background-color: none;
+    border-radius: 2px;
+    width: 15vh;
+    margin-right: 3vh;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    
+}
+#servicesBtn:hover{
+    background-color: #1A6C7A;
+    border:2px solid #1A6C7A;
+   
+}
+#aboutUsBtn{
+    background-color: white;
+    border-radius: 2px;
+    width: 15vh;
+    margin-right: 3vh;
+    border: 2px solid white;
+    color: #1A6C7A;
+    text-transform: uppercase;
+}
+#aboutUsBtn:hover{
+    background-color: #1A6C7A;
+    border:2px solid #1A6C7A;
+    color:white;
+}

@@ -1,12 +1,7 @@
 import React, { Fragment } from 'react'
 import vegetationImage from './Assets/vegetation-1.jpg'
-import './App.css'
+import './Styles/Home.css'
 function Home() {
-    const homePageImage = {
-        objectFit: "cover",
-        opacity: "0.4",
-        width: "100%",
-    }
 
     return (
 
@@ -18,8 +13,8 @@ function Home() {
                         <h3> hemsidor | design </h3>
                         <h1 >Ullman IT Consulting</h1>
                         <p>Välkommen! Vi hjälper dig marknadsföra dig själv eller ditt <br /> företag med en hemsida. Kom igång idag!</p>
-                        <button className="btn btn-success" > Tjänster</button>
-                        <button className="btn btn-success" > Om Oss</button>
+                        <button className="btn btn-lg " id="servicesBtn" > Tjänster</button>
+                        <button className="btn btn-lg" id="aboutUsBtn" > Om Oss</button>
 
                     </section>
 
