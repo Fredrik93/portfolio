@@ -14,7 +14,7 @@ function Home() {
                         <h1 >Ullman IT Consulting</h1>
                         <p>Välkommen! Vi hjälper dig marknadsföra dig själv eller ditt <br /> företag med en hemsida. Kom igång idag!</p>
                         <Link to="/services"><button className="btn btn-lg " id="servicesBtn" > Tjänster</button></Link>
-                        <Link to="/aboutus"><button className="btn btn-lg" id="aboutUsBtn">Om Oss</button> </Link>
+                        <Link to="/about-us"><button className="btn btn-lg" id="aboutUsBtn">Om Oss</button> </Link>
                     </section>
 
                 </header>

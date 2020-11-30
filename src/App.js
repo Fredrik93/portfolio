@@ -1,17 +1,10 @@
 import React, { Fragment } from 'react'
-import Home from './Components/Home'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import AboutUs from './Components/AboutUs';
+import Routes from './Routes';
 
 function App() {
   return (
     <Fragment>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/aboutus" component={AboutUs} />
-        </Switch>
-      </BrowserRouter>
+      <Routes />
     </Fragment>
   )
 }
