@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Home from './Home'
+import Home from './Components/Home'
 function App() {
   return (
     <Fragment>

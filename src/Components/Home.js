@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import vegetationImage from './Assets/vegetation-1.jpg'
-import './Styles/Home.css'
+import vegetationImage from '../Assets/vegetation-1.jpg'
+import '../Styles/Home.css'
 function Home() {
 
     return (
