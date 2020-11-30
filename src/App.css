@@ -1,0 +1,8 @@
+.dark-overlay{
+  
+        height: 600px;
+    width: 100%;
+    background:rgba(26, 108, 122, 0.7);
+    overflow: hidden;
+      
+}
