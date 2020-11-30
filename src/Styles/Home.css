@@ -34,11 +34,15 @@
     border: 2px solid white;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 0.1vh;
+
     
 }
 #servicesBtn:hover{
     background-color: #1A6C7A;
     border:2px solid #1A6C7A;
+    letter-spacing: 0.1vh;
+
    
 }
 #aboutUsBtn{
@@ -49,9 +53,12 @@
     border: 2px solid white;
     color: #1A6C7A;
     text-transform: uppercase;
+    letter-spacing: 0.1vh;
 }
 #aboutUsBtn:hover{
     background-color: #1A6C7A;
     border:2px solid #1A6C7A;
     color:white;
+    letter-spacing: 0.1vh;
+
 }
