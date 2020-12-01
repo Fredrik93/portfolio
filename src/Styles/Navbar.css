@@ -1,0 +1,26 @@
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#img-logo{
+    width:22vh;
+    margin-left: 40vh;
+}
+#img-logo:hover{
+    opacity: 0.6;
+}
+#navlink{
+    color: white;
+    margin: 1vh;
+     
+}
+.navlinks{
+    margin-left: 40vh;
+}
+#navlink:hover{
+    opacity: 0.6;
+    border-bottom: 0.1px solid white;
+}
