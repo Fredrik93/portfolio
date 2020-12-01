@@ -6,13 +6,12 @@ import Services from './Components/Services'
 function Routes() {
     return (
         <Fragment>
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about-us" component={AboutUs} />
-                    <Route path="/services" component={Services} />
-                </Switch>
-            </BrowserRouter>
+
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about-us" component={AboutUs} />
+                <Route path="/services" component={Services} />
+            </Switch>
         </Fragment>
     )
 } export default Routes
