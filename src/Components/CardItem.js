@@ -10,7 +10,8 @@ function CardItem(props) {
     }
     const imgStyle = {
         width: "100%",
-        borderRadius: "3px"
+        borderRadius: "3px",
+
     }
     const anchorlink = {
         color: "white",
@@ -20,7 +21,7 @@ function CardItem(props) {
         <div style={styling} >
             <img style={imgStyle} src={props.projectImg} />
             <h3>{props.projectName}</h3>
-            <Button variant="success"> <a
+            <Button variant="success" to={props.projectLink} > <a
                 style={anchorlink}
                 href={props.projectUrl}
                 target="_blank"

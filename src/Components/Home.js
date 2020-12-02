@@ -3,6 +3,7 @@ import vegetationImage from '../Assets/vegetation-1.jpg'
 import uicHomePage from '../Assets/screenshot-homepage.png'
 import agnartHomePage from '../Assets/agnart-screenshot.png'
 import JomiolaHomePage from '../Assets/jomiola-screenshot.png'
+import defaultImage from '../Assets/waterfall.jpg'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
@@ -61,9 +62,9 @@ function Home() {
                 projectUrl="http://jomiola.se"
             />
             <Card
-                projectName="jomiola"
-                projectImg={JomiolaHomePage}
-                projectUrl="http://jomiola.se"
+                projectName="Counter"
+                projectImg={defaultImage}
+                projectUrl="/counter"
             />
         </Fragment>
     )
