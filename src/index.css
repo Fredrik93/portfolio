@@ -132,18 +132,22 @@
     body {
       
     }
+    #cards{
+       width: 100%!important;
+    }
     #aboutUsBtn{
         width: 25vh;
         margin-top: 1vh;
-
     }
     #servicesBtn{
         width: 25vh;
     }
     .centered-text{
         margin-top: 10vh;
-    }.homepage-image{
+    }
+    .homepage-image{
         height:100%
     }
+
 
   }
