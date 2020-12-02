@@ -8,6 +8,16 @@ class Counter extends React.Component {
         this.state = {
             counter: 0
         }
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange() {
+        this.setState(previousState => {
+            return {
+                counter: previousState.counter + 1
+
+            }
+        })
     }
     render() {
         return (
@@ -16,7 +26,7 @@ class Counter extends React.Component {
                 < br />
                 <div style={{ textAlign: "center" }} >
                     <h1 > {this.state.counter} </h1>
-                    <Button variant="success" onClick={() => { console.log("clicked") }} >Add number</Button>
+                    <Button variant="success" onClick={this.handleChange} >Add number</Button>
                 </div>
             </div>
         )
