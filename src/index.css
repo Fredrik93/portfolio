@@ -129,9 +129,6 @@
     color:white;
 }
 @media screen and (max-width: 600px) {
-    body {
-      
-    }
     #cards{
        width: 100%!important;
     }

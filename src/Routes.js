@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import AboutUs from './Components/AboutUs'
 import Home from './Components/Home'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Services from './Components/Services'
+import Counter from './Components/Counter';
 function Routes() {
     return (
         <Fragment>
@@ -11,7 +12,7 @@ function Routes() {
                 <Route exact path="/" component={Home} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/services" component={Services} />
-
+                <Route path="/counter" component={Counter} />
             </Switch>
         </Fragment>
     )
