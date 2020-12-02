@@ -31,7 +31,7 @@ function AboutUs() {
     }
     return (
         <Fragment>
-            <h3>Om Oss</h3>
+
             <div style={startPageLayout} >
                 <header style={darkOverlay}>
                     <img style={aboutUsImage} alt="homepage-vegetation" src={vegetationImage} />
@@ -42,7 +42,7 @@ function AboutUs() {
 
                 </header>
             </div>
-
+            <h3>Om Oss - h3 used for testing production</h3>
         </Fragment>
     )
 }
