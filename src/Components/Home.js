@@ -1,15 +1,39 @@
 import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
-import '../Styles/Home.css'
+import '../index.css'
 import { Link } from 'react-router-dom'
 function Home() {
-
+    const startPageLayout = {
+        position: "relative",
+        textAlign: "center",
+        color: "white"
+    }
+    const darkOverlay = {
+        height: "90vh",
+        width: "100%",
+        background: "#1A6C7A",
+        opacity: "95%",
+        overflow: "hidden"
+    }
+    const homePageImage = {
+        objectFit: "cover",
+        opacity: "0.4",
+        width: "100%",
+        height: "90vh"
+    }
+    const centeredText = {
+        position: "absolute",
+        top: "40%",
+        left: "50%",
+        transform: "translate(-50%,-50%",
+    }
     return (
         <Fragment>
+            <h3>home page</h3>
             <div className="start-page-layout" >
-                <header className="dark-overlay">
-                    <img className="homepage-image" alt="homepage-vegetation" src={vegetationImage} />
-                    <section className="centered-text">
+                <header style={darkOverlay}>
+                    <img style={homePageImage} alt="homepage-vegetation" src={vegetationImage} />
+                    <section style={centeredText}>
                         <h3> hemsidor | design </h3>
                         <h1 >Ullman IT Consulting</h1>
                         <p>Välkommen! Vi hjälper dig marknadsföra dig själv eller ditt <br /> företag med en hemsida. Kom igång idag!</p>
