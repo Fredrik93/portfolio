@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
+import uicHomePage from '../Assets/screenshot-homepage.png'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
@@ -43,8 +44,9 @@ function Home() {
                 </header>
             </div>
             <Card
-                projectName="ullman"
-                projectImg={vegetationImage}
+                projectName="UIC website"
+                projectImg={uicHomePage}
+                projectUrl="http://ullmanitconsulting.se"
             />
             <Card />
             <Card />
