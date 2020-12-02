@@ -42,7 +42,10 @@ function Home() {
                     </section>
                 </header>
             </div>
-            <Card projectName="ullman" />
+            <Card
+                projectName="ullman"
+                projectImg={vegetationImage}
+            />
             <Card />
             <Card />
         </Fragment>
