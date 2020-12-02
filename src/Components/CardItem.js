@@ -2,11 +2,11 @@ import Card from './Card'
 
 function CardItem(props) {
     const styling = {
-        border: "2px solid black",
-        width: "20%",
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+        padding: "16px",
         textAlign: "center",
-        margin: "2rem",
-        height: "10rem"
+        backgroundColor: "#f1f1f1"
+
     }
     return (
         <div style={styling} >

@@ -4,7 +4,7 @@ import CardItem from './CardItem'
 function Card(props) {
 
     return (
-        <div style={{ boxSizing: "border-box", float: "left", width: "25%", padding: "0 10px", }} >
+        <div style={{ boxSizing: "border-box", float: "left", width: "33%", padding: "0 10px", marginTop: "5vh" }} >
 
             <CardItem projectName={props.projectName} />
         </div>
