@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
 import '../index.css'
 import { Link } from 'react-router-dom'
+import Card from './Card'
 function Home() {
     const startPageLayout = {
         position: "relative",
@@ -32,17 +33,18 @@ function Home() {
             <div className="start-page-layout" >
                 <header style={darkOverlay}>
                     <img style={homePageImage} alt="homepage-vegetation" src={vegetationImage} />
-                    <section style={centeredText}>
+                    <section className="centered-text" style={centeredText}>
                         <h3> hemsidor | design </h3>
                         <h1 >Ullman IT Consulting</h1>
                         <p>Välkommen! Vi hjälper dig marknadsföra dig själv eller ditt <br /> företag med en hemsida. Kom igång idag!</p>
                         <Link to="/services"><button className="btn btn-lg " id="servicesBtn" >Tjänster</button></Link>
                         <Link to="/about-us"><button className="btn btn-lg" id="aboutUsBtn">Om Oss</button> </Link>
                     </section>
-
                 </header>
             </div>
-
+            <Card projectName="ullman" />
+            <Card />
+            <Card />
         </Fragment>
     )
 }

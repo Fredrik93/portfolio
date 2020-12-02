@@ -130,7 +130,6 @@
 }
 @media screen and (max-width: 600px) {
     body {
-      background-color: olive!important;
       
     }
     #aboutUsBtn{
@@ -141,8 +140,10 @@
     #servicesBtn{
         width: 25vh;
     }
-    .start-page-layout{
+    .centered-text{
         margin-top: 10vh;
+    }.homepage-image{
+        height:100%
     }
 
   }

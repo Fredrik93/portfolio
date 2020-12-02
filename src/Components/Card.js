@@ -1,9 +1,12 @@
 import React from 'react'
+import CardItem from './CardItem'
 
-function Card() {
+function Card(props) {
+
     return (
-        <div>
-            <h3>CardItem</h3>
+        <div style={{ boxSizing: "border-box", float: "left", width: "25%", padding: "0 10px", }} >
+
+            <CardItem projectName={props.projectName} />
         </div>
     )
 }
