@@ -120,3 +120,11 @@
         height: 50vh;
         
 }
+
+/* services  */
+
+.services-page-layout{
+    position: relative; 
+    text-align: center;
+    color:white;
+}

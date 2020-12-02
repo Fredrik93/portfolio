@@ -1,10 +1,11 @@
 import React from 'react'
 import Confetti from 'react-confetti'
 import waterfallImage from '../Assets/waterfall.jpg'
+import '../index.css'
 function Services() {
 
     return (
-        <div className="start-page-layout" >
+        <div className="services-page-layout" >
             <header className="dark-overlay">
                 <img className="homepage-image" alt="homepage-vegetation" src={waterfallImage} />
                 <section className="centered-text">
