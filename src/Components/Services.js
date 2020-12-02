@@ -1,22 +1,50 @@
-import React from 'react'
-import Confetti from 'react-confetti'
-import waterfallImage from '../Assets/waterfall.jpg'
+import React, { Fragment } from 'react'
+import vegetationImage from '../Assets/vegetation-1.jpg'
 import '../index.css'
-function Services() {
+import Confetti from 'react-confetti'
+function AboutUs() {
+    const startPageLayout = {
+        position: "relative",
+        textAlign: "center",
+        color: "white",
 
+    }
+    const darkOverlay = {
+        height: "60vh",
+        width: "100%",
+        background: "#1A6C7A",
+        opacity: "95%",
+        overflow: "hidden"
+    }
+    const aboutUsImage = {
+        objectFit: "cover",
+        opacity: "0.4",
+        width: "100%",
+        height: "60vh"
+    }
+    const centeredText = {
+        position: "absolute",
+        top: "40%",
+        left: "50%",
+        transform: "translate(-50%,-50%",
+
+    }
     return (
-        <div className="services-page-layout" >
-            <header className="dark-overlay">
-                <img className="homepage-image" alt="homepage-vegetation" src={waterfallImage} />
-                <section className="centered-text">
-                    <h2>Services offered page < br /> (keeping the confetti for a while because its pretty awesome)</h2>
-                </section>
-            </header>
-            <Confetti />
-        </div>
+        <Fragment>
 
+            <div style={startPageLayout} >
+                <header style={darkOverlay}>
+                    <img style={aboutUsImage} alt="homepage-vegetation" src={vegetationImage} />
+                    <section style={centeredText}>
+                        <h3> Services </h3>
+
+                    </section>
+
+                </header>
+            </div>
+            <h3>Services page</h3>
+            <Confetti />
+        </Fragment>
     )
 }
-
-
-export default Services
+export default AboutUs

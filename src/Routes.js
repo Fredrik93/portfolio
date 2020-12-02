@@ -11,6 +11,7 @@ function Routes() {
                 <Route exact path="/" component={Home} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/services" component={Services} />
+
             </Switch>
         </Fragment>
     )
