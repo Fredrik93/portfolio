@@ -1,4 +1,5 @@
 
+/* Home */
 .dark-overlay{
     height: 90vh;
     width: 100%;
@@ -57,4 +58,65 @@
     border:2px solid #1A6C7A;
     color:white;
     letter-spacing: 0.1vh;
+}
+
+/* Navbar */
+
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#img-logo{
+    width:22vh;
+    margin-left: 2rem;
+}
+#img-logo:hover{
+    opacity: 0.6;
+}
+#navlink{
+    color: white;
+    margin: 1vh;
+    
+     
+}
+.navlinks{
+    margin-left: 4rem;
+}
+#navlink:hover{
+    opacity: 0.6;
+    border-bottom: 0.1px solid white;
+}
+
+/* About us */
+
+.dark-overlay{
+    height: 50vh;
+    width: 100%;
+    background:#1A6C7A;
+    opacity: 95%;
+    overflow: hidden;
+}
+.start-page-layout{
+        position: relative; 
+        text-align: center;
+        color:white;
+}
+.centered-text{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+}
+.centered-text h1{
+        font-size: 8vh;
+}
+.homepage-image{
+        object-fit: cover;
+        opacity: 0.4;
+        width: 100%;
+        height: 50vh;
+        
 }

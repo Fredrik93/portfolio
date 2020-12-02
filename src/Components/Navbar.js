@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
-import '../Styles/Navbar.css'
+import '../index.css'
 import logo from '../Assets/logo-white.png'
 function NavBar() {
 

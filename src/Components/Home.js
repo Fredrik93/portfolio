@@ -29,7 +29,6 @@ function Home() {
     }
     return (
         <Fragment>
-            <h3>home page</h3>
             <div className="start-page-layout" >
                 <header style={darkOverlay}>
                     <img style={homePageImage} alt="homepage-vegetation" src={vegetationImage} />
