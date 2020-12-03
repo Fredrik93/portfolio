@@ -1,5 +1,4 @@
 import { Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 
 function CardItem(props) {
     const styling = {
@@ -19,12 +18,12 @@ function CardItem(props) {
     }
     return (
         <div style={styling} >
-            <img style={imgStyle} src={props.projectImg} />
+            <img style={imgStyle} src={props.projectImg} alt="project" />
             <h3>{props.projectName}</h3>
             <Button variant="success" to={props.projectLink} > <a
                 style={anchorlink}
                 href={props.projectUrl}
-                target="_blank"
+                target="_blank" rel="noreferrer"
             > View </a> </Button>
         </div>
     )

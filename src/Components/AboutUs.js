@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
 import '../index.css'
-import { Link } from 'react-router-dom'
 function AboutUs() {
     const startPageLayout = {
         position: "relative",
