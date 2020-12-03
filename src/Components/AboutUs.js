@@ -42,7 +42,6 @@ function AboutUs() {
 
                 </header>
             </div>
-            <h3>Om Oss - h3 used for testing production</h3>
         </Fragment>
     )
 }

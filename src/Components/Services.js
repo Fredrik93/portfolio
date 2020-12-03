@@ -42,8 +42,6 @@ function AboutUs() {
 
                 </header>
             </div>
-            <h3>Services page</h3>
-            <Confetti />
         </Fragment>
     )
 }
