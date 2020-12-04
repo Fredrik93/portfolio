@@ -36,6 +36,7 @@ function Header(props) {
                     <img style={aboutUsImage} alt="homepage-vegetation" src={vegetationImage} />
                     <section style={centeredText}>
                         <h3> {props.headerText}  </h3>
+                        <h4> {props.detailedInfoAboutComponent}</h4>
 
                     </section>
 

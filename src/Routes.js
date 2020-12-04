@@ -4,6 +4,7 @@ import Home from './Components/Home'
 import { Route, Switch } from "react-router-dom";
 import Services from './Components/Services'
 import Counter from './Components/Counter';
+import { Todos } from './Components/Todos';
 function Routes() {
     return (
         <Fragment>
@@ -13,6 +14,7 @@ function Routes() {
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/services" component={Services} />
                 <Route path="/counter" component={Counter} />
+                <Route path="/todos" component={Todos} />
             </Switch>
         </Fragment>
     )

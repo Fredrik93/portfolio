@@ -66,6 +66,12 @@ function Home() {
                 projectImg={defaultImage}
                 projectUrl="/counter"
             />
+            <Card
+                projectName="Todos List"
+                projectImg={defaultImage}
+                projectUrl="/todos"
+            />
+
         </Fragment>
     )
 }

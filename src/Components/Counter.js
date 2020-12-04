@@ -24,7 +24,13 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                {this.state.counter > 10 ? <Header headerText="You clicked the silly counter 10 times, heres confetti to reward your hard work!" /> : <Header headerText="Counter component" />}
+                {this.state.counter > 10 ? <Header
+                    headerText="You clicked the silly counter 10 times, heres confetti to reward your hard work!"
+                    detailedInfoAboutComponent="A counter that displays the use of state in react"
+                /> :
+                    <Header headerText="Counter component"
+                        detailedInfoAboutComponent="A counter that displays the use of state in react"
+                    />}
                 {this.state.counter > 10 ? <Confetti /> : null}
                 < br />
                 <div style={{ textAlign: "center" }} >
