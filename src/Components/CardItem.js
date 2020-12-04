@@ -10,6 +10,7 @@ function CardItem(props) {
     const imgStyle = {
         width: "100%",
         borderRadius: "3px",
+        height: "18rem"
 
     }
     const anchorlink = {
