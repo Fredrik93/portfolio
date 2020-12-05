@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import Header from './Header'
 import Confetti from 'react-confetti'
 class Counter extends React.Component {

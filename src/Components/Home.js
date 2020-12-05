@@ -8,11 +8,7 @@ import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
 function Home() {
-    const startPageLayout = {
-        position: "relative",
-        textAlign: "center",
-        color: "white"
-    }
+
     const darkOverlay = {
         height: "90vh",
         width: "100%",
