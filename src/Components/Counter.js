@@ -7,8 +7,10 @@ class Counter extends React.Component {
         super()
         this.state = {
             counter: 0
+
         }
         this.handleChange = this.handleChange.bind(this)
+        this.decrementCount = this.decrementCount.bind(this)
     }
 
     handleChange() {
@@ -19,23 +21,34 @@ class Counter extends React.Component {
 
         })
     }
+    decrementCount() {
+        this.setState(previousState => {
+            if (previousState.counter > 0) {
+                return {
+                    counter: previousState.counter - 1
+                }
+            }
+        })
+    }
 
 
     render() {
         return (
             <div>
-                {this.state.counter > 10 ? <Header
+                {this.state.counter >= 10 ? <Header
                     headerText="You clicked the silly counter 10 times, heres confetti to reward your hard work!"
                     detailedInfoAboutComponent="A counter that displays the use of state in react"
                 /> :
                     <Header headerText="Counter component"
                         detailedInfoAboutComponent="A counter that displays the use of state in react"
                     />}
-                {this.state.counter > 10 ? <Confetti /> : null}
+                {this.state.counter >= 10 ? <Confetti /> : null}
                 < br />
                 <div style={{ textAlign: "center" }} >
                     <h1 > {this.state.counter} </h1>
                     <Button variant="success" onClick={this.handleChange} >Add number</Button>
+                    < br />
+                    <Button style={{ margin: "2vh" }} variant="danger" id="decrementNum" onClick={this.decrementCount}>Decrease Number</Button>
                 </div>
             </div>
         )
