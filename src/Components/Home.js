@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import Card from './Card'
 import TextBlock from './TextBlock'
 import { Container } from 'react-bootstrap'
-import { propTypes } from 'react-bootstrap/esm/Image'
+import Counter from './Counter'
 function Home() {
 
     const darkOverlay = {
@@ -45,38 +45,36 @@ function Home() {
                     </section>
                 </header>
             </div>
-            <div>
-                <Card
-                    projectName="UIC"
-                    projectImg={uicHomePage}
-                    projectUrl="http://ullmanitconsulting.se"
-                />
-                <Card
-                    projectName="agnart"
-                    projectImg={agnartHomePage}
-                    projectUrl="http://agnart.se"
-                />
-                <Card
-                    projectName="jomiola"
-                    projectImg={JomiolaHomePage}
-                    projectUrl="http://jomiola.se"
-                />
-                <Card
-                    projectName="Counter"
-                    projectImg={defaultImage}
-                    projectUrl="/counter"
-                />
-                <Card
-                    projectName="Todos List"
-                    projectImg={defaultImage}
-                    projectUrl="/todos"
-                />
-                <Card
-                    projectName="Empty card"
-                    projectImg={defaultImage}
-                    projectUrl=""
-                />
-            </div>
+            <Card
+                projectName="UIC"
+                projectImg={uicHomePage}
+                projectUrl="http://ullmanitconsulting.se"
+            />
+            <Card
+                projectName="agnart"
+                projectImg={agnartHomePage}
+                projectUrl="http://agnart.se"
+            />
+            <Card
+                projectName="jomiola"
+                projectImg={JomiolaHomePage}
+                projectUrl="http://jomiola.se"
+            />
+            <Card
+                projectName="Counter"
+                projectImg={defaultImage}
+                projectUrl="/counter"
+            />
+            <Card
+                projectName="Todos List"
+                projectImg={defaultImage}
+                projectUrl="/todos"
+            />
+            <Card
+                projectName="Empty card"
+                projectImg={defaultImage}
+                projectUrl=""
+            />
 
             <TextBlock
                 title="Hemsidor för ditt företag"

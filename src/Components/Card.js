@@ -4,7 +4,7 @@ import '../index.css'
 function Card(props) {
 
     return (
-        <div style={{ boxSizing: "border-box", float: "left", width: "33%", padding: "0 10px", marginTop: "5vh" }} id="cards" >
+        <div style={{ width: "33%", padding: "1vh", display: "inline-block" }} id="cards" >
             <CardItem
                 projectName={props.projectName}
                 projectImg={props.projectImg}

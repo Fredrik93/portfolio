@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 function TextBlock(props) {
     const styleText = {
         textAlign: "center",
-        margin: "10vh"
+        marginTop: "10vh",
+        border: "5px solid black",
+        marginBottom: "10vh"
     }
 
     return (
