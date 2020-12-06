@@ -145,7 +145,7 @@
     text-align: center;
     color:white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #cards{
        width: 100%!important;
     }
@@ -162,6 +162,5 @@
     .homepage-image{
         height:100%
     }
-
-
   }
+

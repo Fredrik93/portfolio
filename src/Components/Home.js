@@ -33,7 +33,7 @@ function Home() {
         transform: "translate(-50%,-50%",
     }
     return (
-        <Fragment>
+        <Fragment >
             <div className="start-page-layout" >
                 <header style={darkOverlay}>
                     <img style={homePageImage} alt="homepage-vegetation" src={vegetationImage} />
