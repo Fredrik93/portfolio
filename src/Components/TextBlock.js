@@ -5,7 +5,6 @@ function TextBlock(props) {
     const styleText = {
         textAlign: "center",
         marginTop: "10vh",
-        border: "5px solid black",
         marginBottom: "10vh"
     }
 

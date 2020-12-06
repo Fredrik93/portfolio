@@ -3,13 +3,14 @@ import vegetationImage from '../Assets/vegetation-1.jpg'
 import uicHomePage from '../Assets/screenshot-homepage.png'
 import agnartHomePage from '../Assets/agnart-screenshot.png'
 import JomiolaHomePage from '../Assets/jomiola-screenshot.png'
+import inTheWoods from '../Assets/in-the-woods.jpg'
 import defaultImage from '../Assets/service3.jpg'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
 import TextBlock from './TextBlock'
-import { Container } from 'react-bootstrap'
-import Counter from './Counter'
+import ImageBlock from './ImageBlock'
+
 function Home() {
 
     const darkOverlay = {
@@ -83,6 +84,12 @@ function Home() {
              historia och läs mer om oss som studentkonsulter. "
                 link="/history"
                 buttonLabel="VÅR HISTORIA"
+            />
+            <ImageBlock
+                title="Ta Steget!"
+                text="Vi erbjuder en produkt till ett riktigt bra pris"
+                buttonLabel="KONTAKT"
+                image={inTheWoods}
             />
         </Fragment>
     )
