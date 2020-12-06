@@ -7,6 +7,9 @@ import defaultImage from '../Assets/service3.jpg'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
+import TextBlock from './TextBlock'
+import { Container } from 'react-bootstrap'
+import { propTypes } from 'react-bootstrap/esm/Image'
 function Home() {
 
     const darkOverlay = {
@@ -42,32 +45,45 @@ function Home() {
                     </section>
                 </header>
             </div>
-            <Card
-                projectName="UIC"
-                projectImg={uicHomePage}
-                projectUrl="http://ullmanitconsulting.se"
+            <div>
+                <Card
+                    projectName="UIC"
+                    projectImg={uicHomePage}
+                    projectUrl="http://ullmanitconsulting.se"
+                />
+                <Card
+                    projectName="agnart"
+                    projectImg={agnartHomePage}
+                    projectUrl="http://agnart.se"
+                />
+                <Card
+                    projectName="jomiola"
+                    projectImg={JomiolaHomePage}
+                    projectUrl="http://jomiola.se"
+                />
+                <Card
+                    projectName="Counter"
+                    projectImg={defaultImage}
+                    projectUrl="/counter"
+                />
+                <Card
+                    projectName="Todos List"
+                    projectImg={defaultImage}
+                    projectUrl="/todos"
+                />
+                <Card
+                    projectName="Empty card"
+                    projectImg={defaultImage}
+                    projectUrl=""
+                />
+            </div>
+            < br />
+            <TextBlock
+                title="Hemsidor för ditt företag"
+                text="Har du ett företag, 
+            funderar ni på att få bättre exponering på era produkter eller kanske vill driva en blogg ? En hemsida hjälper dig att nå dina mål ! Kika gärna på vår
+             historia och läs mer om oss som studentkonsulter. "
             />
-            <Card
-                projectName="agnart"
-                projectImg={agnartHomePage}
-                projectUrl="http://agnart.se"
-            />
-            <Card
-                projectName="jomiola"
-                projectImg={JomiolaHomePage}
-                projectUrl="http://jomiola.se"
-            />
-            <Card
-                projectName="Counter"
-                projectImg={defaultImage}
-                projectUrl="/counter"
-            />
-            <Card
-                projectName="Todos List"
-                projectImg={defaultImage}
-                projectUrl="/todos"
-            />
-
         </Fragment>
     )
 }
