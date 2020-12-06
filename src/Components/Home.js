@@ -83,6 +83,8 @@ function Home() {
                 text="Har du ett företag, 
             funderar ni på att få bättre exponering på era produkter eller kanske vill driva en blogg ? En hemsida hjälper dig att nå dina mål ! Kika gärna på vår
              historia och läs mer om oss som studentkonsulter. "
+                link="/history"
+                buttonLabel="VÅR HISTORIA"
             />
         </Fragment>
     )
