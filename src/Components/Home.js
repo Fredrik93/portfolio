@@ -77,7 +77,7 @@ function Home() {
                     projectUrl=""
                 />
             </div>
-            < br />
+
             <TextBlock
                 title="Hemsidor för ditt företag"
                 text="Har du ett företag, 
