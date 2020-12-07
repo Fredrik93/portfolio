@@ -8,6 +8,7 @@ export class Todos extends React.Component {
         super()
         this.state = {
             completed: '',
+            task: '',
             todos: data
         }
         this.handleChange = this.handleChange.bind(this)
@@ -26,6 +27,13 @@ export class Todos extends React.Component {
             }
         })
     }
+    addTask() {
+        this.setState((prevState) => {
+
+            this.state.todos.push({ id: 3, name: 'clean bathroom' })
+            console.log(prevState)
+        })
+    }
     render() {
 
         const dataItems = data.map((choreItem) => {
@@ -41,7 +49,7 @@ export class Todos extends React.Component {
                 < br />
                 {dataItems}
                 <div style={{ textAlign: "center" }} >
-                    <Button variant="success" onClick={() => { console.log("Wash dishes") }} > Add task</Button>
+                    <Button variant="success" onClick={() => { this.addTask() }} > Add task</Button>
                 </div>
             </div>
         )
