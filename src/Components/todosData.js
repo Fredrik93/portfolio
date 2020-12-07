@@ -1,10 +1,13 @@
 const data = [
     {
         id: 1,
-        name: "clean"
+        name: "clean",
+        completed: false
+
     },
     {
         id: 2,
-        name: "wash dishes"
+        name: "wash dishes",
+        completed: true
     }]
 export default data

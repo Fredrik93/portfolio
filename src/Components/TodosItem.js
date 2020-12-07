@@ -10,7 +10,9 @@ function TodosItem(props) {
         display: "block"
     }
     return (
-        <h3 style={styling} > {props.itemName}</h3>
+        <div>
+            <h3 style={styling} > {props.itemName} <input type="checkbox" checked="true" onClick={() => { console.log(props.completed) }} /> </h3>
+        </div>
     )
 }
 export default TodosItem
