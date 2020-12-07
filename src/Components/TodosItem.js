@@ -20,6 +20,7 @@ function TodosItem(props) {
                     checked={props.choreItem.completed}
                     onChange={() => { props.handleChange(props.choreItem.id) }} /> </h3>
         </div>
+
     )
 }
 export default TodosItem

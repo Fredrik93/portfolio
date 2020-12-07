@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import TodosItem from './TodosItem'
 import data from './todosData'
+import { Button } from 'react-bootstrap'
 export class Todos extends React.Component {
     constructor() {
         super()
@@ -39,6 +40,9 @@ export class Todos extends React.Component {
                 <Header headerText="Todos Component" />
                 < br />
                 {dataItems}
+                <div style={{ textAlign: "center" }} >
+                    <Button variant="success" onClick={() => { console.log("Wash dishes") }} > Add task</Button>
+                </div>
             </div>
         )
     }
