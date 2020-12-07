@@ -7,15 +7,18 @@ function TodosItem(props) {
         width: "30%",
         marginLeft: "auto",
         marginRight: "auto",
-        display: "block"
+        display: "block",
+        padding: "1vh"
     }
     return (
         <div>
-            <span style={styling} >
+            <h3 style={styling} >
                 {props.choreItem.name}
-                <input type="checkbox"
+                <input
+                    style={{ marginTop: "2vh", float: "right" }}
+                    type="checkbox"
                     checked={props.choreItem.completed}
-                    onChange={() => { props.handleChange(props.choreItem.id) }} /> </span>
+                    onChange={() => { props.handleChange(props.choreItem.id) }} /> </h3>
         </div>
     )
 }
