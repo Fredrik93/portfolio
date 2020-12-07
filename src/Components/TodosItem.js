@@ -11,7 +11,7 @@ function TodosItem(props) {
     }
     return (
         <div>
-            <h3 style={styling} > {props.itemName} <input type="checkbox" checked="true" onClick={() => { console.log(props.completed) }} /> </h3>
+            <h3 style={styling} > {props.itemName} <input type="checkbox" checked={props.completed} onChange={() => { console.log(props.completed) }} /> </h3>
         </div>
     )
 }

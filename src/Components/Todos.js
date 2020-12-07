@@ -12,7 +12,7 @@ export class Todos extends React.Component {
 
         const dataItems = data.map((item) => {
             console.log(item.completed)
-            return <TodosItem itemName={item.name} key={item.id} />
+            return <TodosItem itemName={item.name} key={item.id} completed={item.completed} />
         })
         return (
             <div >
