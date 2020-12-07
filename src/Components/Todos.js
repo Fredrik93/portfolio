@@ -30,8 +30,11 @@ export class Todos extends React.Component {
     addTask() {
         this.setState((prevState) => {
 
-            this.state.todos.push({ id: 3, name: 'clean bathroom' })
+            const addedTodo = this.state.todos.push({ id: 3, name: 'clean bathroom' })
             console.log(prevState)
+            return {
+                todos: addedTodo
+            }
         })
     }
     render() {
