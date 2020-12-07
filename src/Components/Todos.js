@@ -6,14 +6,33 @@ export class Todos extends React.Component {
     constructor() {
         super()
         this.state = {
-            completed: true
+            completed: '',
+            todos: data
         }
+        this.handleChange = this.handleChange.bind(this)
+    }
+    handleChange(id) {
+
+        this.setState((prevState) => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if (todo.id === id) {
+                    todo.completed = !todo.completed
+                }
+                return todo
+            })
+            return {
+                todos: updatedTodos
+            }
+        })
     }
     render() {
 
-        const dataItems = data.map((item) => {
-            console.log(item.completed)
-            return <TodosItem itemName={item.name} key={item.id} completed={this.state.completed} />
+        const dataItems = data.map((choreItem) => {
+
+            return <TodosItem
+                key={choreItem.id}
+                choreItem={choreItem}
+                handleChange={this.handleChange} />
         })
         return (
             <div >

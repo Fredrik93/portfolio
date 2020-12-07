@@ -11,7 +11,11 @@ function TodosItem(props) {
     }
     return (
         <div>
-            <h3 style={styling} > {props.itemName} <input type="checkbox" checked={props.completed} onChange={() => { console.log(props.completed) }} /> </h3>
+            <span style={styling} >
+                {props.choreItem.name}
+                <input type="checkbox"
+                    checked={props.choreItem.completed}
+                    onChange={() => { props.handleChange(props.choreItem.id) }} /> </span>
         </div>
     )
 }
