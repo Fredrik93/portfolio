@@ -6,13 +6,14 @@ export class Todos extends React.Component {
     constructor() {
         super()
         this.state = {
+            completed: true
         }
     }
     render() {
 
         const dataItems = data.map((item) => {
             console.log(item.completed)
-            return <TodosItem itemName={item.name} key={item.id} completed={item.completed} />
+            return <TodosItem itemName={item.name} key={item.id} completed={this.state.completed} />
         })
         return (
             <div >
