@@ -12,6 +12,7 @@ export class Todos extends React.Component {
             todos: data
         }
         this.handleChange = this.handleChange.bind(this)
+        this.addTask = this.addTask.bind(this)
     }
     handleChange(id) {
 
@@ -32,6 +33,7 @@ export class Todos extends React.Component {
 
             const addedTodo = this.state.todos.push({ id: 3, name: 'clean bathroom' })
             console.log(prevState)
+
             return {
                 todos: addedTodo
             }
