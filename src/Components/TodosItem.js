@@ -8,7 +8,7 @@ function TodosItem(props) {
         marginLeft: "auto",
         marginRight: "auto",
         display: "block",
-        padding: "1vh"
+        padding: "2vh"
     }
     return (
         <div>
