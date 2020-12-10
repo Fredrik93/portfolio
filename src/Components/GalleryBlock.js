@@ -5,15 +5,15 @@ import Image2 from '../Assets/service3.jpg'
 
 const imageArray = [Image1, Image2]
 class GalleryBlock extends React.Component {
-    constructor() {
-        super()
-        this.displayImages = this.displayImages.bind(this)
-    }
 
-    displayImages() {
-        imageArray.map((image) => {
-            return console.log(image)
-        })
+    randomizeImages() {
+        const imgStyle = {
+            height: "auto",
+            padding: "1vh",
+            width: "25%"
+        }
+        let rand = 1
+        return < img style={imgStyle} id="galleryImages" src={imageArray[rand]} alt="galleryimage" />
     }
 
     render() {
@@ -37,15 +37,7 @@ class GalleryBlock extends React.Component {
                 <hr style={{ width: "20%", backgroundColor: "black" }} />
                 <span>
                     <Container style={styleImages}  >
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image2} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        <img style={imgStyle} id="galleryImages" src={Image1} alt="galleryimage" />
-                        {this.displayImages()}
-
+                        {this.randomizeImages()}
                     </Container>
 
                 </span>
