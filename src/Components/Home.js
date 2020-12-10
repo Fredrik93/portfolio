@@ -47,36 +47,54 @@ function Home() {
                     </section>
                 </header>
             </div>
-            <Card
-                projectName="UIC"
-                projectImg={uicHomePage}
-                projectUrl="http://ullmanitconsulting.se"
-            />
-            <Card
-                projectName="agnart"
-                projectImg={agnartHomePage}
-                projectUrl="http://agnart.se"
-            />
-            <Card
-                projectName="jomiola"
-                projectImg={JomiolaHomePage}
-                projectUrl="http://jomiola.se"
-            />
-            <Card
-                projectName="Counter"
-                projectImg={defaultImage}
-                projectUrl="/counter"
-            />
-            <Card
-                projectName="Todos List"
-                projectImg={defaultImage}
-                projectUrl="/todos"
-            />
-            <Card
-                projectName="Empty card"
-                projectImg={defaultImage}
-                projectUrl=""
-            />
+            <div style={{ marginTop: "10vh" }} >
+                <h3 style={{ textAlign: "center" }} >Projekt</h3>
+                <hr style={{ width: "20%", backgroundColor: "black" }} />
+
+                <Card
+                    projectName="UIC"
+                    projectImg={uicHomePage}
+                    projectUrl="http://ullmanitconsulting.se"
+                />
+                <Card
+                    projectName="agnart"
+                    projectImg={agnartHomePage}
+                    projectUrl="http://agnart.se"
+                />
+                <Card
+                    projectName="jomiola"
+                    projectImg={JomiolaHomePage}
+                    projectUrl="http://jomiola.se"
+                />
+                <Card
+                    projectName="Counter"
+                    projectImg={defaultImage}
+                    projectUrl="/counter"
+                />
+                <Card
+                    projectName="Todos List"
+                    projectImg={defaultImage}
+                    projectUrl="/todos"
+                />
+                <Card
+                    projectName="Empty card"
+                    projectImg={defaultImage}
+                    projectUrl=""
+                />
+            </div>
+            <div style={{
+                textAlign: "center",
+                marginTop: "3vh",
+                marginBottom: "10vh"
+            }} >
+                <Link to="/projects"  >
+                    <button
+                        className="btn btn-lg "
+                        id="historyBtn" >Alla projekt
+                </button>
+                </Link>
+            </div>
+            <hr style={{ width: "20%", backgroundColor: "black" }} />
 
             <TextBlock
                 title="Hemsidor för ditt företag"
