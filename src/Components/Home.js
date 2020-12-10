@@ -90,6 +90,7 @@ function Home() {
                 title="Ta Steget!"
                 text="Vi erbjuder en produkt till ett riktigt bra pris"
                 buttonLabel="KONTAKT"
+                link="/contact-us"
                 image={inTheWoods}
             />
             <GalleryBlock />
