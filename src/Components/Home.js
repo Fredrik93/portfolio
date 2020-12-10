@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 import Card from './Card'
 import TextBlock from './TextBlock'
 import ImageBlock from './ImageBlock'
+import GalleryBlock from './GalleryBlock'
 
 function Home() {
 
@@ -91,6 +92,7 @@ function Home() {
                 buttonLabel="KONTAKT"
                 image={inTheWoods}
             />
+            <GalleryBlock />
         </Fragment>
     )
 }
