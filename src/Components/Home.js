@@ -87,7 +87,7 @@ function Home() {
                 marginTop: "3vh",
                 marginBottom: "10vh"
             }} >
-                <Link to="/projects"  >
+                <Link to="/under-maintenance"  >
                     <button
                         className="btn btn-lg "
                         id="historyBtn" >Alla projekt
@@ -101,14 +101,14 @@ function Home() {
                 text="Har du ett företag, 
             funderar ni på att få bättre exponering på era produkter eller kanske vill driva en blogg ? En hemsida hjälper dig att nå dina mål ! Kika gärna på vår
              historia och läs mer om oss som studentkonsulter. "
-                link="/history"
+                link="/under-maintenance"
                 buttonLabel="VÅR HISTORIA"
             />
             <ImageBlock
                 title="Ta Steget!"
                 text="Vi erbjuder en produkt till ett riktigt bra pris"
                 buttonLabel="KONTAKT"
-                link="/contact-us"
+                link="/under-maintenance"
                 image={inTheWoods}
             />
             <GalleryBlock />

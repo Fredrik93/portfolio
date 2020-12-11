@@ -34,6 +34,7 @@ function ImageBlock(props) {
                     < br />
                     <Link to={props.link}>
                         <button
+                            onClick={() => { alert("Oh! This page is under construction, you cant view it right now") }}
                             className="btn btn-lg "
                             id="servicesBtn" >{props.buttonLabel}
                         </button>

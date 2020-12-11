@@ -45,7 +45,7 @@ class GalleryBlock extends React.Component {
                         < img style={imgStyle} id="galleryImages" src={waterfall} alt="galleryimage" />
                         < img style={imgStyle} id="galleryImages" src={Patrik} alt="galleryimage" />
                     </Container>
-                    <Link to="/gallery">
+                    <Link to="/under-maintenance">
                         <button
                             className="btn btn-lg "
                             id="historyBtn" > Till Galleri

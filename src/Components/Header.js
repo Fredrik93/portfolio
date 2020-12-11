@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import '../index.css'
 function Header(props) {
     const startPageLayout = {
@@ -27,6 +28,8 @@ function Header(props) {
         transform: "translate(-50%,-50%",
 
     }
+
+
     return (
         <Fragment>
 
@@ -36,7 +39,17 @@ function Header(props) {
                     <section style={centeredText}>
                         <h3> {props.headerText}  </h3>
                         <h4> {props.detailedInfoAboutComponent}</h4>
-
+                        {props.buttonLabel ? <Link to="/" ><button
+                            style={{
+                                marginTop: "10vh",
+                                height: "5vh",
+                                borderRadius: "0.2vh",
+                                margin: "0 auto",
+                                display: "block",
+                                textDecoration: "none"
+                            }} id="historyBtn"  >
+                            {props.buttonLabel} </button></Link> : null
+                        }
                     </section>
 
                 </header>
@@ -44,4 +57,5 @@ function Header(props) {
         </Fragment>
     )
 }
+
 export default Header

@@ -5,8 +5,8 @@ import defaultImg from '../Assets/service3.jpg'
 
 function UnderMaintenance() {
     return (
-
-        <Header headerText=" Oh! This page is under construction" image={defaultImg} />
-
+        <div>
+            <Header headerText=" Oh! This page is under construction" image={defaultImg} buttonLabel="Go back to that sweet home page" />
+        </div>
     )
 } export default UnderMaintenance
