@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
 import '../index.css'
+import Header from './Header'
 function AboutUs() {
     const startPageLayout = {
         position: "relative",
@@ -30,17 +31,7 @@ function AboutUs() {
     }
     return (
         <Fragment>
-
-            <div style={startPageLayout} >
-                <header style={darkOverlay}>
-                    <img style={aboutUsImage} alt="homepage-vegetation" src={vegetationImage} />
-                    <section style={centeredText}>
-                        <h3> Om Oss </h3>
-
-                    </section>
-
-                </header>
-            </div>
+            <Header headerText="Om Oss" image={vegetationImage} />
         </Fragment>
     )
 }
