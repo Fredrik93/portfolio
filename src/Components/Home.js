@@ -74,7 +74,7 @@ function Home() {
                 <Card
                     projectName="Todos List"
                     projectImg={defaultImage}
-                    projectUrl="/todos"
+                    projectUrl="/under-maintenance"
                 />
                 <Card
                     projectName="Empty card"
