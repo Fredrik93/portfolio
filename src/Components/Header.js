@@ -39,16 +39,12 @@ function Header(props) {
                     <section style={centeredText}>
                         <h3> {props.headerText}  </h3>
                         <h4> {props.detailedInfoAboutComponent}</h4>
-                        {props.buttonLabel ? <Link to="/" ><button
-                            style={{
-                                marginTop: "10vh",
-                                height: "5vh",
-                                borderRadius: "0.2vh",
-                                margin: "0 auto",
-                                display: "block",
-                                textDecoration: "none"
-                            }} id="historyBtn"  >
-                            {props.buttonLabel} </button></Link> : null
+                        {props.buttonLabel ?
+                            <Link to="/"><button
+                                className="btn btn-lg "
+                                style={{ marginTop: "5vh" }}
+                                id="servicesBtn" >{props.buttonLabel}</button></Link>
+                            : null
                         }
                     </section>
 
