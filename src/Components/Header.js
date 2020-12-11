@@ -33,7 +33,7 @@ function Header(props) {
 
             <div style={startPageLayout} >
                 <header style={darkOverlay}>
-                    <img style={aboutUsImage} alt="homepage-vegetation" src={vegetationImage} />
+                    <img style={aboutUsImage} alt="homepage-vegetation" src={props.image} />
                     <section style={centeredText}>
                         <h3> {props.headerText}  </h3>
                         <h4> {props.detailedInfoAboutComponent}</h4>

@@ -3,6 +3,8 @@ import Header from './Header'
 import TodosItem from './TodosItem'
 import data from './todosData'
 import { Button } from 'react-bootstrap'
+import vegetationImage from '../Assets/vegetation-1.jpg'
+
 export class Todos extends React.Component {
     constructor() {
         super()
@@ -50,7 +52,7 @@ export class Todos extends React.Component {
         })
         return (
             <div >
-                <Header headerText="Todos Component" />
+                <Header headerText="Todos Component" image={vegetationImage} />
                 < br />
                 {dataItems}
                 <div style={{ textAlign: "center" }} >

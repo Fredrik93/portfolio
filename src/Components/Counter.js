@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import Header from './Header'
 import Confetti from 'react-confetti'
+import vegetationImage from '../Assets/vegetation-1.jpg'
 class Counter extends React.Component {
     constructor() {
         super()
@@ -39,7 +40,7 @@ class Counter extends React.Component {
                     headerText="You clicked the silly counter 10 times, heres confetti to reward your hard work!"
                     detailedInfoAboutComponent="A counter that displays the use of state in react"
                 /> :
-                    <Header headerText="Counter component"
+                    <Header headerText="Counter component" image={vegetationImage}
                         detailedInfoAboutComponent="A counter that displays the use of state in react"
                     />}
                 {this.state.counter >= 10 ? <Confetti /> : null}

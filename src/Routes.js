@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import Services from './Components/Services'
 import Counter from './Components/Counter';
 import { Todos } from './Components/Todos';
+import UnderMaintenance from './Components/UnderMaintenance';
 function Routes() {
     return (
         <Fragment>
@@ -15,6 +16,7 @@ function Routes() {
                 <Route path="/services" component={Services} />
                 <Route path="/counter" component={Counter} />
                 <Route path="/todos" component={Todos} />
+                <Route path="/under-maintenance" component={UnderMaintenance} />
             </Switch>
         </Fragment>
     )
