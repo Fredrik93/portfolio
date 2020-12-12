@@ -8,6 +8,7 @@ function Footer() {
         display: "flex",
 
 
+
     }
     return (
 
@@ -15,14 +16,22 @@ function Footer() {
             <span>
                 <img style={{ height: "auto", width: "20vh", marginLeft: "30vh", marginTop: "3vh" }} src={logo} />
             </span>
-            <span style={{ marginLeft: "30vh" }} >
-                <p>Snabblänkar</p>
+            <span style={{ marginLeft: "30vh", marginTop: "3vh" }} >
+
+                <ul style={{ listStyleType: "none" }} >
+                    <p style={{ fontWeight: "bold" }} >Snabblänkar</p>
+                    <li>Hem</li>
+                    <li>Tjänster</li>
+                    <li>Om Oss</li>
+                    <li>Kontakt</li>
+
+                </ul>
 
             </span>
-            <span style={{ marginLeft: "30vh" }} >
-                <p>Information</p>
+            <span style={{ marginLeft: "30vh", marginTop: "3vh" }} >
+                <p style={{ fontWeight: "bold" }} >Information</p>
 
             </span>
-        </div>
+        </div >
     )
 } export default Footer
