@@ -20,11 +20,15 @@ export class Todos extends React.Component {
             }
         })
     }
+    removeTask(id) {
+        const tasks = this.state.tasks.filter(element => (element.id !== id))
+        this.setState({ tasks: tasks })
+    }
     render() {
         return (
             <div className="Todos" >
                 <Header headerText="Todos app" image={vegetationImage} />
-                <SubmitForm />
+                <SubmitForm addTask={this.addTask} />
                 <TasksList tasks={this.state.tasks} removeTask={this.removeTask} />
             </div>
         )
