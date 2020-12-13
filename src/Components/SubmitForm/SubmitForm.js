@@ -26,7 +26,7 @@ export default class SubmitForm extends React.Component {
     render() {
         return (
             <div className="form">
-                <form>
+                <form onSubmit={this.addItem} >
                     <input
                         className="input"
                         placeholder="Add Task"
