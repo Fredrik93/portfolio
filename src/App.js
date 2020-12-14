@@ -8,7 +8,6 @@ function App() {
     <Fragment>
       <NavBar />
       <Routes />
-      <Footer />
     </Fragment>
   )
 }
