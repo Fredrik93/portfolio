@@ -16,8 +16,8 @@ function AboutUs() {
                 <Col style={{ backgroundColor: "green", border: "2px solid black", }} xs={12} sm={12} md={6} lg={6} >
                     <img style={{ height: "auto", width: "100%", marginBottom: "2vh" }} src={selfie} alt="selfie" />
                     <a target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black", marginBottom: "2vh" }}></i> </a>
-                    <a target="_blank" href="https://www.w3schools.com"  > <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
-                    <a target="_blank" href="https://www.w3schools.com"  > <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
+                    <a target="_blank" href="https://www.w3schools.com"  > <i className="far fa-file-upload" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
 
                 </Col>
                 <Col style={{ backgroundColor: "green", border: "2px solid black" }} xs={12} sm={12} md={6} lg={6} >
