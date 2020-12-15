@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 import runningWater from '../Assets/running-water.jpg'
 import selfie from '../Assets/selfie.jpg'
 import '../index.css'
+import 'font-awesome/css/font-awesome.min.css';
 import Header from './Header'
 function AboutUs() {
 
@@ -13,7 +14,11 @@ function AboutUs() {
                 <Col style={{ backgroundColor: "green", border: "2px solid black", fontSize: "3rem", textAlign: "center" }} xs={12} sm={12} md={6} lg={6} >Fredrik Ullman <hr style={{ backgroundColor: "black" }} /> </Col>
                 <Col style={{ backgroundColor: "green", border: "2px solid black" }} xs={12} sm={12} md={6} lg={6} >empty fill </Col>
                 <Col style={{ backgroundColor: "green", border: "2px solid black", }} xs={12} sm={12} md={6} lg={6} >
-                    <img style={{ height: "auto", width: "100%" }} src={selfie} alt="selfie" />
+                    <img style={{ height: "auto", width: "100%", marginBottom: "2vh" }} src={selfie} alt="selfie" />
+                    <a target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black", marginBottom: "2vh" }}></i> </a>
+                    <a target="_blank" href="https://www.w3schools.com"  > <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
+                    <a target="_blank" href="https://www.w3schools.com"  > <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
+
                 </Col>
                 <Col style={{ backgroundColor: "green", border: "2px solid black" }} xs={12} sm={12} md={6} lg={6} >
                     <h4 style={{ fontWeight: "bold" }} > Studying Software engineering and management at the University
