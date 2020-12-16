@@ -22,7 +22,7 @@ function AboutUs() {
                     <a target="_blank" href={cv}  > <i className="fa fa-file" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
 
                 </Col>
-                <Col style={{ textAlign: "left", paddingRight: "15vh" }} xs={12} sm={12} md={6} lg={6} >
+                <Col id="about-text" style={{ textAlign: "left", paddingLeft: "10vh", paddingRight: "10vh" }} xs={12} sm={12} md={6} lg={6} >
                     <h4 style={{ fontWeight: "bold", marginBottom: "4vh" }} > Studying Software engineering and management at the University
                     of Gothenburg with 1+ years experience in programming,
                           web development and project management </h4>
