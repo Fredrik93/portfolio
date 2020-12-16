@@ -17,12 +17,12 @@ function AboutUs() {
                 <Col style={{ textAlign: "center" }} xs={12} sm={12} md={6} lg={6} >
                     <img style={{ height: "auto", width: "60%", marginBottom: "2vh" }} src={selfie} alt="selfie" />
                     < br />
-                    <a target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black", marginBottom: "2vh" }}></i> </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
-                    <a target="_blank" href={cv}  > <i className="fa fa-file" style={{ fontSize: "3rem", marginLeft: "1vh", color: "black" }}></i> </a>
+                    <a id="icons" target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" style={{ fontSize: "2rem", marginLeft: "1vh", color: "black", marginBottom: "2vh" }}></i> </a>
+                    <a id="icons" target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" style={{ fontSize: "2rem", marginLeft: "1vh", color: "black" }}></i> </a>
+                    <a id="icons" target="_blank" href={cv}  > <i className="fa fa-file" style={{ fontSize: "1.5rem", marginLeft: "1vh", color: "black" }}></i> </a>
 
                 </Col>
-                <Col id="about-text" style={{ textAlign: "left", paddingLeft: "10vh", paddingRight: "10vh" }} xs={12} sm={12} md={6} lg={6} >
+                <Col id="aboutimg" style={{ textAlign: "left", paddingLeft: "10vh", paddingRight: "10vh" }} xs={12} sm={12} md={6} lg={6} >
                     <h4 style={{ fontWeight: "bold", marginBottom: "4vh" }} > Studying Software engineering and management at the University
                     of Gothenburg with 1+ years experience in programming,
                           web development and project management </h4>
