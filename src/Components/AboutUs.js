@@ -44,7 +44,7 @@ function AboutUs() {
                     </p>
                     <h4
                         style={{ fontWeight: "bold", marginTop: "4vh" }} >
-                        Fredrik Ullman , Founder and Developer
+                        Fredrik Ullman, Founder and Developer
                         </h4>
                 </Col>
 

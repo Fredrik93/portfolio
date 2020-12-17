@@ -35,6 +35,7 @@ class Counter extends React.Component {
 
     render() {
         return (
+
             <div>
                 {this.state.counter >= 10 ? <Header
                     headerText="You clicked the silly counter 10 times, heres confetti to reward your hard work!"
