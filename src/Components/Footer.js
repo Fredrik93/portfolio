@@ -39,7 +39,14 @@ function Footer(props) {
             <div style={startPageLayout} >
                 <Row style={{ backgroundColor: "lightgray" }}>
                     <Col style={{ border: "2px solid black", margin: "4vh" }} > <img src={logo} alt="uiclogo" /> </Col>
-                    <Col style={{ border: "2px solid black", margin: "4vh" }} >2</Col>
+                    <Col style={{ border: "2px solid black", margin: "4vh" }} >
+                        <ul style={{ listStyleType: "none", textAlign: "left" }} >
+                            Links
+                            <a> <li> link </li> </a>
+                            <a> <li> link </li> </a>
+                            <a> <li> link </li> </a>
+                        </ul>
+                    </Col>
                     <Col style={{ border: "2px solid black", margin: "4vh" }} >3</Col>
                 </Row>
             </div>
