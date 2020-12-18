@@ -1,53 +1,48 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import logo from '../Assets/logo.png'
-
-function Footer() {
-    const footerStyle = {
-        height: "20vh",
-        backgroundColor: "lightgray",
-        display: "flex",
+import React, { Fragment } from 'react'
+import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import '../index.css'
+function Footer(props) {
+    const startPageLayout = {
+        position: "relative",
         textAlign: "center",
+        color: "white",
+
     }
+    const darkOverlay = {
+        height: "20vh",
+        width: "100%",
+        background: "gray",
+        opacity: "95%",
+        overflow: "hidden"
+    }
+    const aboutUsImage = {
+        objectFit: "cover",
+        opacity: "0.4",
+        width: "100%",
+        height: "60vh"
+    }
+    const centeredText = {
+        position: "absolute",
+        top: "40%",
+        left: "50%",
+        transform: "translate(-50%,-50%",
+
+    }
+
+
     return (
+        <Fragment>
 
-        <Container >
-            <Row>
-                <Col
-                    lg={true} ><img style={{ width: "20vh" }} src={logo} />
-                </Col>
-                <Col
-                    lg={true} > <ul style={{ listStyleType: "none" }} >
-                        <p style={{ fontWeight: "bold" }} >Snabblänkar</p>
-                        <li>Hem</li>
-                        <li>Tjänster</li>
-                        <li>Om Oss</li>
-                        <li>Kontakt</li>
-                    </ul>
-                </Col>
-                <Col lg={true} >
-                    <p style={{ fontWeight: "bold" }} >Information</p>
-                </Col>
-            </Row>
-        </Container>
-        // <div style={footerStyle} className="footer" >
-        //     <span>
-        //         <img style={{ height: "auto", width: "20vh", marginLeft: "30vh", marginTop: "3vh" }} src={logo} />
-        //     </span>
-        //     <span style={{ marginLeft: "30vh", marginTop: "3vh" }} >
-
-        //         <ul style={{ listStyleType: "none" }} >
-        //             <p style={{ fontWeight: "bold" }} >Snabblänkar</p>
-        //             <li>Hem</li>
-        //             <li>Tjänster</li>
-        //             <li>Om Oss</li>
-        //             <li>Kontakt</li>
-        //         </ul>
-        //     </span>
-        //     <span style={{ marginLeft: "30vh", marginTop: "3vh" }} >
-        //         <p style={{ fontWeight: "bold" }} >Information</p>
-
-        //     </span>
-        // </div >
+            <div style={startPageLayout} >
+                <Row style={darkOverlay}>
+                    <Col style={{ border: "2px solid black" }} >1</Col>
+                    <Col style={{ border: "2px solid black" }} >2</Col>
+                    <Col style={{ border: "2px solid black" }} >3</Col>
+                </Row>
+            </div>
+        </Fragment >
     )
-} export default Footer
+}
+
+export default Footer
