@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import logo from '../Assets/logo.png'
 import '../index.css'
 function Footer(props) {
     const startPageLayout = {
@@ -10,7 +11,7 @@ function Footer(props) {
 
     }
     const darkOverlay = {
-        height: "20vh",
+        height: "25vh",
         width: "100%",
         background: "gray",
         opacity: "95%",
@@ -27,6 +28,7 @@ function Footer(props) {
         top: "40%",
         left: "50%",
         transform: "translate(-50%,-50%",
+        border: "2px solid black"
 
     }
 
@@ -35,10 +37,10 @@ function Footer(props) {
         <Fragment>
 
             <div style={startPageLayout} >
-                <Row style={darkOverlay}>
-                    <Col style={{ border: "2px solid black" }} >1</Col>
-                    <Col style={{ border: "2px solid black" }} >2</Col>
-                    <Col style={{ border: "2px solid black" }} >3</Col>
+                <Row style={{ backgroundColor: "lightgray" }}>
+                    <Col style={{ border: "2px solid black", margin: "4vh" }} > <img src={logo} alt="uiclogo" /> </Col>
+                    <Col style={{ border: "2px solid black", margin: "4vh" }} >2</Col>
+                    <Col style={{ border: "2px solid black", margin: "4vh" }} >3</Col>
                 </Row>
             </div>
         </Fragment >
