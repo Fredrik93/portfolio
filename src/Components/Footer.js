@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from '../Assets/logo.png'
 import '../index.css'
 import '../Styles/Footer.css'
+import cv from '../Assets/resume-2020.pdf'
 function Footer(props) {
     const startPageLayout = {
         position: "relative",
@@ -39,7 +40,14 @@ function Footer(props) {
 
             <div style={startPageLayout} >
                 <Row style={{ backgroundColor: "#eee" }}>
-                    <Col style={{ border: "2px solid black", margin: "4vh" }} > <img src={logo} alt="uiclogo" /> </Col>
+                    <Col style={{ border: "2px solid black", margin: "4vh" }} >
+                        <img src={logo} alt="uiclogo" />
+                        < br />
+                        <a id="icons" target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" ></i> </a>
+                        <a id="icons" target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" ></i> </a>
+                        <a id="icons" target="_blank" href={cv}  > <i className="fa fa-file"></i> </a>
+
+                    </Col>
                     <Col style={{ border: "2px solid black", margin: "4vh" }} >
                         <ul style={{ listStyleType: "none", textAlign: "left", color: "black" }} >
                             <h5 style={{ fontWeight: "bold" }} >  Snabblänkar</h5>
@@ -48,7 +56,6 @@ function Footer(props) {
                             <a className="links" href="/about-us" > <li> Om oss </li> </a>
                             <a className="links" > <li> Kontakt </li> </a>
                             <a className="links" > <li> Villkor </li> </a>
-
                         </ul>
                     </Col>
                     <Col style={{ border: "2px solid black", margin: "4vh", textAlign: "left", color: "black" }} >
