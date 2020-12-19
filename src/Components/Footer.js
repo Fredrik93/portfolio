@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import logo from '../Assets/logo.png'
 import '../index.css'
+import '../Styles/Footer.css'
 function Footer(props) {
     const startPageLayout = {
         position: "relative",
@@ -37,17 +38,29 @@ function Footer(props) {
         <Fragment>
 
             <div style={startPageLayout} >
-                <Row style={{ backgroundColor: "lightgray" }}>
+                <Row style={{ backgroundColor: "#eee" }}>
                     <Col style={{ border: "2px solid black", margin: "4vh" }} > <img src={logo} alt="uiclogo" /> </Col>
                     <Col style={{ border: "2px solid black", margin: "4vh" }} >
-                        <ul style={{ listStyleType: "none", textAlign: "left" }} >
-                            Links
-                            <a> <li> link </li> </a>
-                            <a> <li> link </li> </a>
-                            <a> <li> link </li> </a>
+                        <ul style={{ listStyleType: "none", textAlign: "left", color: "black" }} >
+                            <h5 style={{ fontWeight: "bold" }} >  Snabblänkar</h5>
+                            <Link className="links" to="/services" >  <li> Tjänster (Link Comp) </li>  </Link>
+                            <a className="links" href="/services" > <li> Tjänster </li> </a>
+                            <a className="links" href="/about-us" > <li> Om oss </li> </a>
+                            <a className="links" > <li> Kontakt </li> </a>
+                            <a className="links" > <li> Villkor </li> </a>
+
                         </ul>
                     </Col>
-                    <Col style={{ border: "2px solid black", margin: "4vh" }} >3</Col>
+                    <Col style={{ border: "2px solid black", margin: "4vh", textAlign: "left", color: "black" }} >
+                        <h5 style={{ fontWeight: "bold" }} > Information</h5>
+                        <p  >
+                            fredrik@ullmanitconsulting.se
+                            <br />
+                            Julianas Gård 4, Göteborg
+                            <br />
+                            Godkänd för F-skatt
+                        </p>
+                    </Col>
                 </Row>
             </div>
         </Fragment >

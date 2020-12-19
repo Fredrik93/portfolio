@@ -19,10 +19,12 @@ class GalleryBlock extends React.Component {
         const styleText = {
             textAlign: "center",
             marginTop: "10vh",
-            marginBottom: "10vh"
+            marginBottom: "10vh",
+
         }
         const styleImages = {
-            padding: "2vh"
+            padding: "2vh",
+
         }
         const imgStyle = {
             height: "auto",
@@ -30,29 +32,30 @@ class GalleryBlock extends React.Component {
             width: "25%"
         }
         return (
-
-            <div style={styleText} >
-                <span style={{ display: "block" }} ><h3>Galleri</h3></span>
-                <hr style={{ width: "20%", backgroundColor: "black" }} />
-                <span>
-                    <Container style={styleImages}  >
-                        < img style={imgStyle} id="galleryImages" src={vegetation} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={raspberry} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={VermontLighter} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={VermontLighter2} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={Inthewoods} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={paintRaspberry} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={waterfall} alt="galleryimage" />
-                        < img style={imgStyle} id="galleryImages" src={Patrik} alt="galleryimage" />
-                    </Container>
-                    <Link to="/under-maintenance">
-                        <button
-                            className="btn btn-lg "
-                            id="historyBtn" > Till Galleri
+            <div >
+                <div style={styleText} >
+                    <span style={{ display: "block" }} ><h3>Galleri</h3></span>
+                    <hr style={{ width: "20%", backgroundColor: "black" }} />
+                    <span>
+                        <Container style={styleImages}  >
+                            < img style={imgStyle} id="galleryImages" src={vegetation} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={raspberry} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={VermontLighter} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={VermontLighter2} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={Inthewoods} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={paintRaspberry} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={waterfall} alt="galleryimage" />
+                            < img style={imgStyle} id="galleryImages" src={Patrik} alt="galleryimage" />
+                        </Container>
+                        <Link to="/under-maintenance">
+                            <button
+                                className="btn btn-lg "
+                                id="historyBtn" > Till Galleri
                     </button>
-                    </Link>
+                        </Link>
 
-                </span>
+                    </span>
+                </div>
             </div>
         )
 
