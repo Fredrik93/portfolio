@@ -9,6 +9,9 @@
     cursor:pointer ;
 }
 #icons{
+    font-size: 3vh;
     color:black;
-    
+}
+#icons:hover{
+    font-size: 2.8vh;
 }
