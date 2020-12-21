@@ -42,7 +42,7 @@ function Footer(props) {
             <div style={startPageLayout} >
                 <Row style={{ backgroundColor: "#eee" }}>
                     <Col xs={12} sm={12} md={12} lg={4} style={{ marginTop: "4vh" }} >
-                        <img src={logo} alt="uiclogo" />
+                        <img style={{ marginBottom: "1vh" }} src={logo} alt="uiclogo" />
                         < br />
                         <a id="icons" target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" ></i> </a>
                         <a id="icons" target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" ></i> </a>
@@ -50,7 +50,7 @@ function Footer(props) {
 
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={4} >
-                        <h5 style={{ color: "black" }} > Snabblänkar </h5>
+                        <h5 style={{ color: "black", marginTop: "4vh", fontWeight: "bold" }} > Snabblänkar </h5>
                         <Link className="links" to="/services" >  <li> Tjänster (Link Comp) </li>  </Link>
                         <a className="links" href="/services" > <li> Tjänster </li> </a>
                         <a className="links" href="/about-us" > <li> Om oss </li> </a>
