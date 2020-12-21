@@ -45,6 +45,12 @@ function Footer(props) {
                             <br />
                             Godkänd för F-skatt
                         </p>
+
+                    </Col>
+                    <Col style={{ color: "black", textAlign: "right", marginTop: "4vh" }} >
+                        Copyright UllmanITConsulting</Col>
+                    <Col style={{ color: "black", textAlign: "left", marginTop: "4vh" }} >
+                        Updated December 2020
                     </Col>
                 </Row>
             </div>
