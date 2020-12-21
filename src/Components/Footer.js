@@ -47,9 +47,10 @@ function Footer(props) {
                         </p>
 
                     </Col>
-                    <Col style={{ color: "black", textAlign: "right", marginTop: "4vh" }} >
+                    <Col sm={12} md={12} lg={12} xlg={12} > <hr style={{ backgroundColor: "lightgray", width: "70%" }} /> </Col>
+                    <Col style={{ color: "black", textAlign: "right" }} >
                         Copyright UllmanITConsulting</Col>
-                    <Col style={{ color: "black", textAlign: "left", marginTop: "4vh" }} >
+                    <Col style={{ color: "black", textAlign: "left" }} >
                         Updated December 2020
                     </Col>
                 </Row>
