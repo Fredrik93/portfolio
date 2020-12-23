@@ -24,7 +24,7 @@ class Timer extends React.Component {
                     <h3 > {this.state.timer} </h3>
                     <Button style={{ margin: "2vh" }} variant="success" onClick={this.handleChange} > Start Timer </Button>
                     < br />
-                    <Button variant="danger" onClick={() => { console.log("timer restarted") }} > Restart </Button>
+                    <Button variant="danger" onClick={() => { this.setState({ timer: 25 }) }} > Restart </Button>
 
                 </form>
             </div>
