@@ -7,23 +7,24 @@ class Timer extends React.Component {
     constructor() {
         super()
         this.state = {
-            timer: 1500
+            timer: 1500,
+            buttonClicked: false,
+            value: true
         }
         this.handleChange = this.handleChange.bind(this)
-        this.countDown = this.countDown.bind(this)
     }
 
-    countDown() {
-
-    }
     handleChange() {
         setInterval(() => {
             this.setState((prevState) => {
+
                 return {
+                    buttonClicked: true,
                     timer: prevState.timer - 1
                 }
             })
         }, 1000);
+
     }
 
     render() {
@@ -32,9 +33,12 @@ class Timer extends React.Component {
                 <Header image={clock} headerText="Productivity Timer" />
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <h3 > {this.state.timer} </h3>
-                    <Button style={{ margin: "2vh" }} variant="success" onClick={this.handleChange} > Start Timer </Button>
+                    <Button
+                        onChange={e => this.setState({ buttonClicked: true })}
+                        disabled={this.state.buttonClicked}
+                        style={{ margin: "2vh" }} variant="success" onClick={this.handleChange}  > Start Timer </Button>
                     < br />
-                    <Button variant="danger" onClick={() => { this.setState({ timer: 1500 }) }} > Restart </Button>
+                    <Button variant="danger" onClick={() => { this.setState({ timer: 1500, buttonClicked: false }) }} > Restart </Button>
 
                 </form>
             </div>
