@@ -7,13 +7,23 @@ class Timer extends React.Component {
     constructor() {
         super()
         this.state = {
-            timer: 25
+            timer: 1500
         }
         this.handleChange = this.handleChange.bind(this)
+        this.countDown = this.countDown.bind(this)
     }
 
+    countDown() {
+
+    }
     handleChange() {
-        this.setState({ timer: 10 })
+        setInterval(() => {
+            this.setState((prevState) => {
+                return {
+                    timer: prevState.timer - 1
+                }
+            })
+        }, 1000);
     }
 
     render() {
@@ -24,7 +34,7 @@ class Timer extends React.Component {
                     <h3 > {this.state.timer} </h3>
                     <Button style={{ margin: "2vh" }} variant="success" onClick={this.handleChange} > Start Timer </Button>
                     < br />
-                    <Button variant="danger" onClick={() => { this.setState({ timer: 25 }) }} > Restart </Button>
+                    <Button variant="danger" onClick={() => { this.setState({ timer: 1500 }) }} > Restart </Button>
 
                 </form>
             </div>
