@@ -8,6 +8,8 @@ class Timer extends React.Component {
         super()
         this.state = {
             timer: 1500,
+            minutes: 25,
+            seconds: 59,
             buttonClicked: false,
             value: true,
             intervalId: null
@@ -22,22 +24,33 @@ class Timer extends React.Component {
                 timer: prevState.timer - 1
             }
         })
+        this.countDown()
+    }
+    countDown() {
+        this.setState((prevState) => {
+            return {
+                seconds: prevState.seconds - 1
+            }
+
+        })
+        console.log(this.state.seconds + "seconds")
     }
 
     render() {
 
         return (
-            <div>
+
+            < div >
                 <Header image={clock} headerText="Productivity Timer" />
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <h3 > {this.state.timer} </h3>
+                    <h3>{this.state.minutes}:{this.state.seconds !== 59 ? this.state.seconds : "00"} </h3>
                     <Button
                         onChange={e => this.setState({ buttonClicked: true })}
                         disabled={this.state.buttonClicked}
                         style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
                     < br />
                     <Button variant="danger" onClick={() => {
-
                         clearInterval(this.state.intervalId)
                         this.setState({
                             timer: 1500, buttonClicked: false
@@ -46,7 +59,7 @@ class Timer extends React.Component {
                     }} > Restart </Button>
 
                 </form>
-            </div>
+            </div >
         )
     }
 } export default Timer
