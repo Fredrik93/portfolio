@@ -9,26 +9,23 @@ class Timer extends React.Component {
         this.state = {
             timer: 1500,
             buttonClicked: false,
-            value: true
+            value: true,
+            intervalId: null
         }
         this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange() {
-
-        setInterval(() => {
-            this.setState((prevState) => {
-
-                return {
-                    buttonClicked: true,
-                    timer: prevState.timer - 1
-                }
-            })
-        }, 1000);
-
+        this.setState((prevState) => {
+            return {
+                buttonClicked: true,
+                timer: prevState.timer - 1
+            }
+        })
     }
 
     render() {
+
         return (
             <div>
                 <Header image={clock} headerText="Productivity Timer" />
@@ -37,9 +34,16 @@ class Timer extends React.Component {
                     <Button
                         onChange={e => this.setState({ buttonClicked: true })}
                         disabled={this.state.buttonClicked}
-                        style={{ margin: "2vh" }} variant="success" onClick={this.handleChange}  > Start Timer </Button>
+                        style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
                     < br />
-                    <Button variant="danger" onClick={() => { this.setState({ timer: 1500, buttonClicked: false }) }} > Restart </Button>
+                    <Button variant="danger" onClick={() => {
+
+                        clearInterval(this.state.intervalId)
+                        this.setState({
+                            timer: 1500, buttonClicked: false
+                        })
+
+                    }} > Restart </Button>
 
                 </form>
             </div>
