@@ -5,6 +5,7 @@ import agnartHomePage from '../Assets/agnart-screenshot.png'
 import JomiolaHomePage from '../Assets/jomiola-screenshot.png'
 import inTheWoods from '../Assets/in-the-woods.jpg'
 import defaultImage from '../Assets/service3.jpg'
+import clock from '../Assets/clock.jpeg'
 import '../index.css'
 import { Link } from 'react-router-dom'
 import Card from './Card'
@@ -77,9 +78,9 @@ function Home() {
                     projectUrl="/todos"
                 />
                 <Card
-                    projectName="Empty card"
-                    projectImg={defaultImage}
-                    projectUrl=""
+                    projectName="Productivity timer"
+                    projectImg={clock}
+                    projectUrl="/timer"
                 />
             </div>
             <div style={{

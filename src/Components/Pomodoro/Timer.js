@@ -15,6 +15,7 @@ class Timer extends React.Component {
     }
 
     handleChange() {
+
         setInterval(() => {
             this.setState((prevState) => {
 
