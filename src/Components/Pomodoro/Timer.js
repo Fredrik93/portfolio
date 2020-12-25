@@ -9,8 +9,8 @@ class Timer extends React.Component {
         super()
         this.state = {
             timer: 1500,
-            minutes: 25,
-            seconds: 59,
+            minutes: 1,
+            seconds: 10,
             buttonClicked: false,
             value: true,
             intervalId: null
@@ -28,7 +28,18 @@ class Timer extends React.Component {
         this.countDown()
     }
     countDown() {
+        if (this.state.minutes === 0 && this.state.seconds === 0) {
+            alert("Times Up! breakie breakie!!! ")
+            this.setState({ minutes: 25, seconds: 0 })
+            clearInterval(this.state.intervalId)
+            this.setState(prevState => ({
+                buttonClicked: !prevState.buttonClicked
+            }));
+        }
         this.setState((prevState) => {
+            if (this.state.seconds === 0) {
+                return { minutes: this.state.minutes - 1, seconds: 10 }
+            }
             return {
                 seconds: prevState.seconds - 1
             }
