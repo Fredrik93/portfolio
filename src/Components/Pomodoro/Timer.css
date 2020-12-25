@@ -1,0 +1,9 @@
+body{
+    background-color: sandybrown;
+}
+.timer-component{
+border-radius: 20vh;
+flex-wrap:wrap;
+color:black;
+border:10px solid black
+}
