@@ -3,6 +3,5 @@ body{
 }
 .timer-component{
 border: 12px solid black;
-border-radius: 10vh;
-
+border-radius: 50%;
 }

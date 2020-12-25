@@ -45,25 +45,28 @@ class Timer extends React.Component {
                 <Header image={clock} headerText="Productivity Timer" />
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <Row>
-                        <Col sm={12} md={12} lg={12} xlg={12} >
+                        <Col >
+
+                        </Col>
+                        <Col>
                             <div className="timer-component" >
                                 <h3 > {this.state.timer} </h3>
                                 <h3 >{this.state.minutes}:{this.state.seconds !== 59 ? this.state.seconds : "00"} </h3>
                             </div>
-                        </Col>
-                        <Col> <Button
-                            onChange={e => this.setState({ buttonClicked: true })}
-                            disabled={this.state.buttonClicked}
-                            style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
-                        </Col>
-                        <Col> <Button variant="danger" onClick={() => {
-                            clearInterval(this.state.intervalId)
-                            this.setState({
-                                timer: 1500, buttonClicked: false
-                            })
+                            <Button
+                                onChange={e => this.setState({ buttonClicked: true })}
+                                disabled={this.state.buttonClicked}
+                                style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
+                            <Button variant="danger" onClick={() => {
+                                clearInterval(this.state.intervalId)
+                                this.setState({
+                                    timer: 1500, buttonClicked: false
+                                })
 
-                        }} > Restart </Button>
+                            }} > Restart </Button>
+
                         </Col>
+                        <Col>   </Col>
                     </Row>
 
                 </form>
