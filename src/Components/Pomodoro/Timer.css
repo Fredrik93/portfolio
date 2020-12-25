@@ -1,9 +1,8 @@
 body{
-    background-color: sandybrown;
+    background-color: pink;
 }
 .timer-component{
-border-radius: 20vh;
-flex-wrap:wrap;
-color:black;
-border:10px solid black
+border: 12px solid black;
+border-radius: 10vh;
+
 }

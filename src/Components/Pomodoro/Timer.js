@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header'
 import clock from '../../Assets/clock.jpeg'
-import { Button, Row, Col } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 import './Timer.css'
 
 class Timer extends React.Component {
@@ -45,8 +45,11 @@ class Timer extends React.Component {
                 <Header image={clock} headerText="Productivity Timer" />
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <Row>
-                        <Col sm={12} md={12} lg={12} xlg={12} > <h3 > {this.state.timer} </h3>
-                            <h3 className="timer-component" >{this.state.minutes}:{this.state.seconds !== 59 ? this.state.seconds : "00"} </h3>
+                        <Col sm={12} md={12} lg={12} xlg={12} >
+                            <div className="timer-component" >
+                                <h3 > {this.state.timer} </h3>
+                                <h3 >{this.state.minutes}:{this.state.seconds !== 59 ? this.state.seconds : "00"} </h3>
+                            </div>
                         </Col>
                         <Col> <Button
                             onChange={e => this.setState({ buttonClicked: true })}
@@ -62,7 +65,6 @@ class Timer extends React.Component {
                         }} > Restart </Button>
                         </Col>
                     </Row>
-                    < br />
 
                 </form>
             </div >
