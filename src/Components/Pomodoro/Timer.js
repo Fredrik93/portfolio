@@ -9,8 +9,8 @@ class Timer extends React.Component {
         super()
         this.state = {
             timer: 1500,
-            minutes: 1,
-            seconds: 10,
+            minutes: 25,
+            seconds: 0,
             buttonClicked: false,
             value: true,
             intervalId: null
@@ -38,7 +38,7 @@ class Timer extends React.Component {
         }
         this.setState((prevState) => {
             if (this.state.seconds === 0) {
-                return { minutes: this.state.minutes - 1, seconds: 10 }
+                return { minutes: this.state.minutes - 1, seconds: 59 }
             }
             return {
                 seconds: prevState.seconds - 1
