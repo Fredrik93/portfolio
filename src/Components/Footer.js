@@ -22,10 +22,10 @@ function Footer(props) {
                     <Col xs={12} sm={12} md={12} lg={4} style={{ marginTop: "4vh" }} >
                         <img style={{ marginBottom: "1vh" }} src={logo} alt="uiclogo" />
                         < br />
-                        <a id="icons" target="_blank" href="https://github.com/Fredrik93"> <i className="fa fa-github" ></i> </a>
-                        <a id="icons" target="_blank" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" ></i> </a>
-                        <a id="icons" target="_blank" href="https://www.instagram.com/ullmanitconsulting/"  > <i className="fa fa-instagram" ></i> </a>
-                        <a id="icons" target="_blank" href={cv}  > <i className="fa fa-file"></i> </a>
+                        <a id="icons" target="_blank" rel="noreferrer" href="https://github.com/Fredrik93"> <i className="fa fa-github" ></i> </a>
+                        <a id="icons" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carl-fredrik-ullman-919645174/"  > <i className="fa fa-linkedin" ></i> </a>
+                        <a id="icons" target="_blank" rel="noreferrer" href="https://www.instagram.com/ullmanitconsulting/"  > <i className="fa fa-instagram" ></i> </a>
+                        <a id="icons" target="_blank" rel="noreferrer" href={cv}  > <i className="fa fa-file"></i> </a>
 
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={4} >
@@ -33,8 +33,8 @@ function Footer(props) {
                         <Link className="links" to="/services" >  <li> Tjänster (Link Comp) </li>  </Link>
                         <a className="links" href="/services" > <li> Tjänster </li> </a>
                         <a className="links" href="/about-us" > <li> Om oss </li> </a>
-                        <a className="links" > <li> Kontakt </li> </a>
-                        <a className="links" > <li> Villkor </li> </a>
+                        <a className="links" href="/" > <li> Kontakt </li> </a>
+                        <a className="links" href="/" > <li> Villkor </li> </a>
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={4} id="footer-links" style={{ textAlign: "left", color: "black", marginTop: "4vh" }} >
                         <h5 style={{ fontWeight: "bold" }} > Information</h5>
