@@ -54,7 +54,6 @@ class Timer extends React.Component {
         })
         console.log(this.state.seconds + "seconds")
     }
-
     render() {
 
         return (
@@ -82,7 +81,9 @@ class Timer extends React.Component {
                                 })
 
                             }} > Restart </Button>
-
+                            <Button onClick={this.testing} >
+                                click
+                        </Button>
                         </Col>
                         <Col>   </Col>
                     </Row>
