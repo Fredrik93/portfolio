@@ -17,7 +17,9 @@ class Timer extends React.Component {
             experience: 0
         }
         this.handleChange = this.handleChange.bind(this)
+
     }
+
 
     handleChange() {
         this.setState((prevState) => {
@@ -28,6 +30,7 @@ class Timer extends React.Component {
         })
         this.countDown()
     }
+
     countDown() {
         if (this.state.minutes === 0 && this.state.seconds === 0) {
             alert("Times Up! breakie breakie!!! ")
@@ -51,6 +54,7 @@ class Timer extends React.Component {
         })
         console.log(this.state.seconds + "seconds")
     }
+
 
     render() {
 
