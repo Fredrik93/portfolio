@@ -13,7 +13,8 @@ class Timer extends React.Component {
             seconds: 0,
             buttonClicked: false,
             value: true,
-            intervalId: null
+            intervalId: null,
+            experience: 0
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -38,11 +39,14 @@ class Timer extends React.Component {
         }
         this.setState((prevState) => {
             if (this.state.seconds === 0) {
-                return { minutes: this.state.minutes - 1, seconds: 5 }
+                return {
+                    minutes: this.state.minutes - 1, seconds: 5, experience: this.state.experience + 1
+                }
             }
             return {
                 seconds: prevState.seconds - 1
             }
+
 
         })
         console.log(this.state.seconds + "seconds")
@@ -57,7 +61,7 @@ class Timer extends React.Component {
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <Row>
                         <Col >
-
+                            <h4>Freds XP: {this.state.experience}</h4>
                         </Col>
                         <Col>
                             <div className="timer-component" >
