@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import Image1 from '../Assets/service3.jpg'
 import VermontLighter from '../Assets/vermont-lighter.jpg'
 import VermontLighter2 from '../Assets/vermont-lighter-2.jpg'
 import Inthewoods from '../Assets/in-the-woods.jpg'
@@ -9,7 +8,6 @@ import paintRaspberry from '../Assets/paint_raspberry.jpg'
 import waterfall from '../Assets/waterfall.jpg'
 import Patrik from '../Assets/patrik.jpg'
 import raspberry from '../Assets/raspberry.jpg'
-import winter from '../Assets/winter.jpg'
 import vegetation from '../Assets/vegetation-1.jpg'
 
 class GalleryBlock extends React.Component {

@@ -17,8 +17,9 @@ export default class SubmitForm extends React.Component {
                 key: Date.now()
             }
             this.props.addTask(newItem)
-
-            this.state.tasksCount++;
+            this.setState((prevState) => {
+                return { tasksCount: prevState.tasksCount++ }
+            })
             this._inputElement.value = ""
         }
         e.preventDefault()

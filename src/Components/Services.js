@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import vegetationImage from '../Assets/vegetation-1.jpg'
 import '../index.css'
-import Confetti from 'react-confetti'
 function AboutUs() {
     const startPageLayout = {
         position: "relative",
