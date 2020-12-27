@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb+srv://user:xxxxxxxx@cluster0.vojuh.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
+var url = `mongodb+srv://<user>:<passwd>@cluster0.vojuh.mongodb.net/<dbname>?retryWrites=true&w=majority`;
 
 //create new entry
 // MongoClient.connect(url, function (err, db) {

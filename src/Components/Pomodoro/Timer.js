@@ -55,7 +55,6 @@ class Timer extends React.Component {
         console.log(this.state.seconds + "seconds")
     }
 
-
     render() {
 
         return (
