@@ -9,7 +9,7 @@ class Timer extends React.Component {
         super()
         this.state = {
             timer: 1500,
-            minutes: 1,
+            minutes: 25,
             seconds: 0,
             buttonClicked: false,
             value: true,
@@ -54,6 +54,7 @@ class Timer extends React.Component {
         })
         console.log(this.state.seconds + "seconds")
     }
+
     render() {
 
         return (
@@ -81,9 +82,7 @@ class Timer extends React.Component {
                                 })
 
                             }} > Restart </Button>
-                            <Button onClick={this.testing} >
-                                click
-                        </Button>
+
                         </Col>
                         <Col>   </Col>
                     </Row>
