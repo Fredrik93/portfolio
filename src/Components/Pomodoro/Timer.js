@@ -75,7 +75,7 @@ class Timer extends React.Component {
 
 
         })
-        console.log(this.state.seconds + "seconds")
+        console.log(this.state.seconds + " seconds (this is a reminder that the function is called each time, can it be fixed?)")
     }
 
     saveExperience() {
@@ -94,10 +94,20 @@ class Timer extends React.Component {
     }
 
     render() {
+        let startOrStopTimer = this.state.buttonClicked
+            ? <Button style={{ margin: "2vh", paddingLeft: "4vh", paddingRight: "4vh" }} variant="info" onClick={() => {
+                clearInterval(this.state.intervalId)
+                this.setState({ buttonClicked: !this.state.buttonClicked })
+            }} >Stop</Button>
+            : <Button
+                onChange={e => this.setState({ buttonClicked: true })}
+                disabled={this.state.buttonClicked}
+                style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
+
+
 
         return (
-
-            < div >
+            <div >
                 <Header image={clock} headerText="Productivity Timer" />
                 <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
                     <Row>
@@ -110,10 +120,7 @@ class Timer extends React.Component {
                                 <h3 > {this.state.timer} </h3>
                                 <h3 >{this.state.minutes}:{this.state.seconds !== 59 ? this.state.seconds : "00"} </h3>
                             </div>
-                            <Button
-                                onChange={e => this.setState({ buttonClicked: true })}
-                                disabled={this.state.buttonClicked}
-                                style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
+                            {startOrStopTimer}
                             <Button variant="danger" onClick={() => {
                                 clearInterval(this.state.intervalId)
                                 this.setState({
