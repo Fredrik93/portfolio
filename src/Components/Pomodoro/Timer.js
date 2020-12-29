@@ -17,6 +17,7 @@ class Timer extends React.Component {
             experience: 0
         }
         this.handleChange = this.handleChange.bind(this)
+        this.saveExperience = this.saveExperience.bind(this)
 
     }
 
@@ -55,6 +56,22 @@ class Timer extends React.Component {
         console.log(this.state.seconds + "seconds")
     }
 
+    saveExperience() {
+
+        fetch('http://localhost:4000/users/updatexp/5fe9eaa992bdf041ed2d403f', {
+            method: 'PATCH',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                experience: this.state.experience
+
+            })
+        })
+        console.log("saving xp" + this.state.experience)
+    }
+
     render() {
 
         return (
@@ -65,6 +82,7 @@ class Timer extends React.Component {
                     <Row>
                         <Col >
                             <h4>Freds XP: {this.state.experience}</h4>
+                            <Button variant="success" onClick={this.saveExperience} > Save XP </Button>
                         </Col>
                         <Col>
                             <div className="timer-component" >
