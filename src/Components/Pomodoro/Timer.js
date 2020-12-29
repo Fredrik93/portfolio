@@ -21,6 +21,28 @@ class Timer extends React.Component {
 
     }
 
+    //fetch the xp from database that belongs to user 
+    componentDidMount() {
+        fetch("http://localhost:4000/users/5fe9eaa992bdf041ed2d403f")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        experience: result.experience
+                    });
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    });
+                }
+            )
+    }
+
 
     handleChange() {
         this.setState((prevState) => {
@@ -57,7 +79,6 @@ class Timer extends React.Component {
     }
 
     saveExperience() {
-
         fetch('http://localhost:4000/users/updatexp/5fe9eaa992bdf041ed2d403f', {
             method: 'PATCH',
             headers: {
@@ -69,7 +90,7 @@ class Timer extends React.Component {
 
             })
         })
-        console.log("saving xp" + this.state.experience)
+        console.log("saving xp : " + this.state.experience)
     }
 
     render() {
