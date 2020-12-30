@@ -8,7 +8,7 @@ class Timer extends React.Component {
     constructor() {
         super()
         this.state = {
-            minutes: 2,
+            minutes: 25,
             seconds: 0,
             buttonClicked: false,
             value: true,
@@ -56,7 +56,8 @@ class Timer extends React.Component {
         if (this.state.minutes === 0 && this.state.seconds === 0) {
             alert("Times Up! breakie breakie!!! ")
             this.saveExperience()
-            this.setState({ minutes: 25, seconds: 0 })
+            //why am i setting the state here? its doesnt do anything
+            // this.setState({ minutes: 25, seconds: 0 })
             clearInterval(this.state.intervalId)
             this.setState(prevState => ({
                 buttonClicked: !prevState.buttonClicked
@@ -65,7 +66,7 @@ class Timer extends React.Component {
         this.setState((prevState) => {
             if (this.state.seconds === 0) {
                 return {
-                    minutes: this.state.minutes - 1, seconds: 5, experience: this.state.experience + 1
+                    minutes: this.state.minutes - 1, seconds: 59, experience: this.state.experience + 1
                 }
             }
             return {
@@ -112,10 +113,19 @@ class Timer extends React.Component {
                     <Row>
                         <Col >
                             <h4>Freds XP: {this.state.experience}</h4>
+                            <Button variant="success" onClick={this.saveExperience} > Save XP </Button>
                         </Col>
                         <Col>
                             <div className="timer-component" >
-                                <h3 >{this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} </h3>
+                                <h3> <div className="add-remove-time" onClick={() => {
+                                    this.setState((prevState) => {
+                                        return { minutes: prevState.minutes + 1 }
+                                    })
+                                }} > + </div> {this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} <div className="add-remove-time" onClick={() => {
+                                    this.setState((prevState) => {
+                                        return { minutes: prevState.minutes - 1 }
+                                    })
+                                }} > - </div> </h3>
                             </div>
                             {startOrStopTimer}
                             <Button variant="danger" onClick={() => {
@@ -125,7 +135,6 @@ class Timer extends React.Component {
                                 })
 
                             }} > Restart </Button>
-
                         </Col>
                         <Col>   </Col>
                     </Row>
