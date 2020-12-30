@@ -115,7 +115,7 @@ class Timer extends React.Component {
                         </Col>
                         <Col>
                             <div className="timer-component" >
-                                <h3 >{this.state.minutes}:{this.state.seconds == 0 ? "00" : this.state.seconds} </h3>
+                                <h3 >{this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} </h3>
                             </div>
                             {startOrStopTimer}
                             <Button variant="danger" onClick={() => {

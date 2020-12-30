@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import logo from '../Assets/logo.png'
 import '../index.css'
 import '../Styles/Footer.css'
@@ -30,7 +29,6 @@ function Footer(props) {
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={4} >
                         <h5 style={{ color: "black", marginTop: "4vh", fontWeight: "bold" }} > Snabblänkar </h5>
-                        <Link className="links" to="/services" >  <li> Tjänster (Link Comp) </li>  </Link>
                         <a className="links" href="/services" > <li> Tjänster </li> </a>
                         <a className="links" href="/about-us" > <li> Om oss </li> </a>
                         <a className="links" href="/" > <li> Kontakt </li> </a>
