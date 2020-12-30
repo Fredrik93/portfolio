@@ -8,7 +8,7 @@ class Timer extends React.Component {
     constructor() {
         super()
         this.state = {
-            minutes: 25,
+            minutes: 2,
             seconds: 0,
             buttonClicked: false,
             value: true,
@@ -55,6 +55,7 @@ class Timer extends React.Component {
     countDown() {
         if (this.state.minutes === 0 && this.state.seconds === 0) {
             alert("Times Up! breakie breakie!!! ")
+            this.saveExperience()
             this.setState({ minutes: 25, seconds: 0 })
             clearInterval(this.state.intervalId)
             this.setState(prevState => ({
@@ -111,7 +112,6 @@ class Timer extends React.Component {
                     <Row>
                         <Col >
                             <h4>Freds XP: {this.state.experience}</h4>
-                            <Button variant="success" onClick={this.saveExperience} > Save XP </Button>
                         </Col>
                         <Col>
                             <div className="timer-component" >
@@ -121,7 +121,7 @@ class Timer extends React.Component {
                             <Button variant="danger" onClick={() => {
                                 clearInterval(this.state.intervalId)
                                 this.setState({
-                                    timer: 1500, buttonClicked: false, seconds: 0
+                                    buttonClicked: false, seconds: 0, minutes: 25
                                 })
 
                             }} > Restart </Button>
