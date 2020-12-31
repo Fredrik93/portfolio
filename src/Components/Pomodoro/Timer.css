@@ -9,8 +9,3 @@ border-radius: 50%;
 .add-remove-time{
     cursor: pointer;
 }
-.add-remove-time:hover{
-transform: rotate(20deg);
-
-
-}
