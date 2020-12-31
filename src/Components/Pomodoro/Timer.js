@@ -123,7 +123,8 @@ class Timer extends React.Component {
                                     })
                                 }} > + </div> {this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} <div className="add-remove-time" onClick={() => {
                                     this.setState((prevState) => {
-                                        return { minutes: prevState.minutes - 1 }
+                                        if (this.state.minutes > 0)
+                                            return { minutes: prevState.minutes - 1 }
                                     })
                                 }} > - </div> </h3>
                             </div>
