@@ -93,6 +93,13 @@ class Timer extends React.Component {
         console.log("saving xp : " + this.state.experience)
     }
 
+    restartTimer() {
+        clearInterval(this.state.intervalId)
+        this.setState({
+            buttonClicked: false, seconds: 0, minutes: 25
+        })
+    }
+
     render() {
         let startOrStopTimer = this.state.buttonClicked
             ? <Button style={{ margin: "2vh", paddingLeft: "4vh", paddingRight: "4vh" }} variant="info" onClick={() => {
@@ -118,13 +125,15 @@ class Timer extends React.Component {
 
         let displayTimer = <div> {this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} </div>
 
+        let displayExperience = <h4>Freds XP: {this.state.experience}</h4>
+
         return (
             <div >
                 <Header image={clock} headerText="Productivity Timer" />
-                <form style={{ textAlign: "center", marginTop: "4vh", marginBottom: "4vh" }} >
+                <form className="TimerForm">
                     <Row>
                         <Col >
-                            <h4>Freds XP: {this.state.experience}</h4>
+                            {displayExperience}
                             <Button variant="success" onClick={this.saveExperience} > Save XP </Button>
                         </Col>
                         <Col>
@@ -136,13 +145,7 @@ class Timer extends React.Component {
                                 </h3>
                             </div>
                             {startOrStopTimer}
-                            <Button variant="danger" onClick={() => {
-                                clearInterval(this.state.intervalId)
-                                this.setState({
-                                    buttonClicked: false, seconds: 0, minutes: 25
-                                })
-
-                            }} > Restart </Button>
+                            <Button variant="danger" onClick={() => { this.restartTimer() }} > Restart </Button>
                         </Col>
                         <Col>   </Col>
                     </Row>
