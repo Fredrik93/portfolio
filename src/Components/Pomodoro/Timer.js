@@ -90,7 +90,10 @@ class Timer extends React.Component {
                 experience: this.state.experience
             })
         },
-        ).catch(() => { console.log("woop error message") })
+        ).catch(() => {
+            console.log("Something went wrong. Check backend and try again")
+            alert("Can't save xp, check server connection ")
+        })
         console.log("saving xp : " + this.state.experience)
     }
 
