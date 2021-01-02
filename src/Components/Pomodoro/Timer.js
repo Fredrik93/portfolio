@@ -85,13 +85,16 @@ class Timer extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
+
             body: JSON.stringify({
                 experience: this.state.experience
-
             })
-        })
+        },
+        ).catch(() => { console.log("woop error message") })
         console.log("saving xp : " + this.state.experience)
     }
+
+
 
     restartTimer() {
         clearInterval(this.state.intervalId)
