@@ -46,8 +46,6 @@ class Timer extends React.Component {
                 }
             )
     }
-
-
     handleChange() {
         this.setState((prevState) => {
             return {
@@ -101,16 +99,23 @@ class Timer extends React.Component {
         })
         console.log("saving xp : " + this.state.experience)
     }
-
-
-
     restartTimer() {
         clearInterval(this.state.intervalId)
         this.setState({
             buttonClicked: false, seconds: 0, minutes: 25
         })
     }
+    dailyStreak() {
+        const date = new Date()
 
+        const todaysDate = date.getDate()
+        const yesterdaysDate = todaysDate - 1
+
+        console.log("today: " + todaysDate + ", yesterday: " + yesterdaysDate)
+        if (todaysDate > 14) {
+            console.log("yay daily streak!")
+        }
+    }
     render() {
         let startOrStopTimer = this.state.buttonClicked
             ? <Button style={{ margin: "2vh", paddingLeft: "4vh", paddingRight: "4vh" }} variant="info" onClick={() => {
@@ -165,6 +170,7 @@ class Timer extends React.Component {
                     </Row>
 
                 </form>
+                {this.dailyStreak()}
             </div >
         )
     }
