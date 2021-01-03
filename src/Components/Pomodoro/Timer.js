@@ -13,7 +13,8 @@ class Timer extends React.Component {
             buttonClicked: false,
             value: true,
             intervalId: null,
-            experience: 0
+            experience: 0,
+            serverOnline: ''
         }
         this.handleChange = this.handleChange.bind(this)
         this.saveExperience = this.saveExperience.bind(this)
@@ -27,7 +28,8 @@ class Timer extends React.Component {
             .then(
                 (result) => {
                     this.setState({
-                        experience: result.experience
+                        experience: result.experience,
+                        serverOnline: true
                     });
                 },
                 // Note: it's important to handle errors here
@@ -35,9 +37,12 @@ class Timer extends React.Component {
                 // exceptions from actual bugs in components.
                 (error) => {
                     this.setState({
+                        serverOnline: false,
                         isLoaded: true,
                         error
                     });
+                    console.log("Cant connect to server, boolean is set to " + this.state.serverOnline)
+
                 }
             )
     }
@@ -116,6 +121,9 @@ class Timer extends React.Component {
                 onChange={e => this.setState({ buttonClicked: true })}
                 disabled={this.state.buttonClicked}
                 style={{ margin: "2vh" }} variant="success" onClick={() => { this.setState({ intervalId: setInterval(this.handleChange, 1000) }) }} > Start Timer </Button>
+
+        let displayStartBtn = this.state.serverOnline ? startOrStopTimer : <Button disabled={true} variant="success" style={{ margin: "2vh" }}  > Start timer </Button>
+
         let decreaseTime = <div className="add-remove-time" onClick={() => {
             this.setState((prevState) => {
                 if (this.state.minutes > 0)
@@ -150,7 +158,7 @@ class Timer extends React.Component {
                                     {decreaseTime}
                                 </h3>
                             </div>
-                            {startOrStopTimer}
+                            {displayStartBtn}
                             <Button variant="danger" onClick={() => { this.restartTimer() }} > Restart </Button>
                         </Col>
                         <Col>   </Col>
