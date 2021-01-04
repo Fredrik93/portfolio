@@ -118,7 +118,7 @@ class Timer extends React.Component {
         //check what day it currently is
         let streakDate = new Date()
         let todaysDate = streakDate.getDate();
-        console.log("the day is : " + todaysDate + " and last day registered in componentDidMount was " + this.state.dateWhenGettingXP)
+        console.log("the day is : " + todaysDate + " and last day registered in componentDidMount was " + this.state.dateWhenGettingXP + " so we'll add a streak day!")
         //if xp has been gathered, add one dayStreak
         if (todaysDate === this.state.dateWhenGettingXP) {
             console.log("hey works")
