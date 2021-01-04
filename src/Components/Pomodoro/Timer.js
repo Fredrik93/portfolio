@@ -14,7 +14,8 @@ class Timer extends React.Component {
             value: true,
             intervalId: null,
             experience: 0,
-            serverOnline: ''
+            serverOnline: '',
+            dateWhenGettingXP: 0
         }
         this.handleChange = this.handleChange.bind(this)
         this.saveExperience = this.saveExperience.bind(this)
@@ -23,19 +24,25 @@ class Timer extends React.Component {
 
     //fetch the xp from database that belongs to user 
     componentDidMount() {
+
         fetch("http://localhost:4000/users/5fe9eaa992bdf041ed2d403f")
             .then(res => res.json())
             .then(
                 (result) => {
+                    let date = new Date()
+                    var dateWhenFetching = date.getDate()
+                    console.log("Date was updated to the : " + dateWhenFetching + "th, server online")
                     this.setState({
                         experience: result.experience,
-                        serverOnline: true
+                        serverOnline: true,
+                        dateWhenGettingXP: dateWhenFetching
                     });
                 },
                 // Note: it's important to handle errors here
                 // instead of a catch() block so that we don't swallow
                 // exceptions from actual bugs in components.
                 (error) => {
+                    console.log("the date was not updated, server is down and last date found was " + this.state.dateWhenGettingXP)
                     this.setState({
                         serverOnline: false,
                         isLoaded: true,
@@ -82,6 +89,7 @@ class Timer extends React.Component {
     }
 
     saveExperience() {
+        this.dailyStreak()
         fetch('http://localhost:4000/users/updatexp/5fe9eaa992bdf041ed2d403f', {
             method: 'PATCH',
             headers: {
@@ -108,10 +116,14 @@ class Timer extends React.Component {
     dailyStreak() {
         //if experienced have been gathered during a specific day, that day should be added to the daily streak
         //check what day it currently is
+        let streakDate = new Date()
+        let todaysDate = streakDate.getDate();
+        console.log("the day is : " + todaysDate + " and last day registered in componentDidMount was " + this.state.dateWhenGettingXP)
         //if xp has been gathered, add one dayStreak
+        if (todaysDate === this.state.dateWhenGettingXP) {
+            console.log("hey works")
+        }
         //if you dont add xp one day, then set dayStreak to 0 
-
-
     }
     render() {
         let startOrStopTimer = this.state.buttonClicked
@@ -168,7 +180,6 @@ class Timer extends React.Component {
                     </Row>
 
                 </form>
-                {this.dailyStreak()}
             </div >
         )
     }
