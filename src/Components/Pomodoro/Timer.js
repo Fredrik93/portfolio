@@ -106,19 +106,17 @@ class Timer extends React.Component {
         })
     }
     dailyStreak() {
-        const date = new Date()
+        //if experienced have been gathered during a specific day, that day should be added to the daily streak
+        //check what day it currently is
+        //if xp has been gathered, add one dayStreak
+        //if you dont add xp one day, then set dayStreak to 0 
 
-        const todaysDate = date.getDate()
-        const yesterdaysDate = todaysDate - 1
 
-        console.log("today: " + todaysDate + ", yesterday: " + yesterdaysDate)
-        if (todaysDate > 14) {
-            console.log("yay daily streak!")
-        }
     }
     render() {
         let startOrStopTimer = this.state.buttonClicked
             ? <Button style={{ margin: "2vh", paddingLeft: "4vh", paddingRight: "4vh" }} variant="info" onClick={() => {
+                this.saveExperience()
                 clearInterval(this.state.intervalId)
                 this.setState({ buttonClicked: !this.state.buttonClicked })
             }} >Stop</Button>
