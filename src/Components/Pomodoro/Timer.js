@@ -154,7 +154,7 @@ class Timer extends React.Component {
 
         let displayTimer = <div> {this.state.minutes}:{this.state.seconds === 0 ? "00" : this.state.seconds} </div>
 
-        let displayExperience = <h4>Freds XP: {this.state.experience}</h4>
+        let displayExperience = <h4>Freds XP: {this.state.serverOnline ? this.state.experience : "--"} </h4>
 
         return (
             <div >
