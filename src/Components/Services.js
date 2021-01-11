@@ -8,9 +8,11 @@ function AboutUs() {
     return (
         <Fragment>
             <Header headerText="Om Oss" image={vegetationImage} />
-            <h4 style={{ textAlign: "center" }} >hi</h4>
-
-            <Row style={{ textAlign: "center" }} >
+            <div style={{ textAlign: "center", margin: "10vh" }}  >
+                <h4 >våra produkter</h4>
+                <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
+            </div>
+            <Row style={{ textAlign: "center", marginBottom: "10vh" }} >
                 <Col>1</Col>
                 <Col>2</Col>
                 <Col>3</Col>
