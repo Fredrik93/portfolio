@@ -13,9 +13,8 @@ function AboutUs(props) {
                 <h4 >våra produkter</h4>
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
-            <Row style={{ textAlign: "center", marginBottom: "10vh" }} >
-
-                <Col >
+            <Row  >
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "green" }}  >
                     <Prices
                         title="Basic"
                         price="3000:-"
@@ -25,8 +24,26 @@ function AboutUs(props) {
                         item2="3 sidor till hemsidan"
                     />
                 </Col>
-                <Col>2</Col>
-                <Col>3</Col>
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "pink" }} >
+                    <Prices
+                        title="Basic"
+                        price="3000:-"
+                        information="Baspaketet. Detta är för dig som vill ha en rent 
+                      informativ hemsida med till exempel en startsida, en meny och en Om Oss sida."
+                        item1="Välj mellan ett 10 - tal mallar​"
+                        item2="3 sidor till hemsidan"
+                    />
+                </Col>
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "yellow" }}  >
+                    <Prices
+                        title="Basic"
+                        price="3000:-"
+                        information="Baspaketet. Detta är för dig som vill ha en rent 
+                      informativ hemsida med till exempel en startsida, en meny och en Om Oss sida."
+                        item1="Välj mellan ett 10 - tal mallar​"
+                        item2="3 sidor till hemsidan"
+                    />
+                </Col>
 
             </Row>
 

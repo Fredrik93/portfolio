@@ -1,5 +1,11 @@
 #price-card{
     background-image: url("../../Assets/in-the-woods.jpg");
-    color:white
+    color:white;
+    border-radius: 2vh;
+    width:35vh;
+
+
+  
+    
    
 }
