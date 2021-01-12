@@ -4,7 +4,7 @@ import vegetationImage from '../Assets/vegetation-2.jpg'
 import Header from './Header'
 import '../index.css'
 import Prices from './Prices/Prices'
-function AboutUs(props) {
+function AboutUs() {
 
     return (
         <Fragment>
@@ -14,7 +14,7 @@ function AboutUs(props) {
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
             <Row  >
-                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "green" }}  >
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} >
                     <Prices
                         title="Basic"
                         price="3000:-"
@@ -24,9 +24,9 @@ function AboutUs(props) {
                         item2="3 sidor till hemsidan"
                     />
                 </Col>
-                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "pink" }} >
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} >
                     <Prices
-                        title="Basic"
+                        title="Medium"
                         price="3000:-"
                         information="Baspaketet. Detta är för dig som vill ha en rent 
                       informativ hemsida med till exempel en startsida, en meny och en Om Oss sida."
@@ -34,9 +34,9 @@ function AboutUs(props) {
                         item2="3 sidor till hemsidan"
                     />
                 </Col>
-                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} style={{ backgroundColor: "yellow" }}  >
+                <Col className="d-flex justify-content-center" lg={4} md={12} sm={12} xs={12} >
                     <Prices
-                        title="Basic"
+                        title="Professional"
                         price="3000:-"
                         information="Baspaketet. Detta är för dig som vill ha en rent 
                       informativ hemsida med till exempel en startsida, en meny och en Om Oss sida."

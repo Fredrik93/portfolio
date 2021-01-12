@@ -4,9 +4,10 @@
     border-radius: 2vh;
     width:35vh;
     text-align: center;
-  
-   
+    height: 50vh;
+    margin-bottom: 4vh;
 }
+
 #price-text{
     margin-top: 5vh;
 }
