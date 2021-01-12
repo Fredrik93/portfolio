@@ -1,8 +1,9 @@
 import React from 'react'
+import './Prices.css'
 
 function Prices(props) {
     return (
-        <div>
+        <div id="price-card" >
             {props.title} {props.price}
             < br />
             {props.information}

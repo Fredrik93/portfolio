@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 import vegetationImage from '../Assets/vegetation-2.jpg'
 import Header from './Header'
 import '../index.css'
-import Prices from './Prices'
+import Prices from './Prices/Prices'
 function AboutUs(props) {
 
     return (
