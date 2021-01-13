@@ -3,9 +3,9 @@
     color:white;
     border-radius: 1vh;
     text-align: center;
-    
+    height:35vh;
     margin-bottom: 4vh;
-    
-   
-    
+}
+#price-text{
+    padding: 4vh;
 }

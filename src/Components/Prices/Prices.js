@@ -4,7 +4,8 @@ import './Prices.css'
 function Prices(props) {
     return (
         <div id="price-card" >
-            <div id="price-text">
+
+            <div id="price-text" >
                 <h3>  {props.title} {props.price} </h3>
                 < br />
                 {props.information}
