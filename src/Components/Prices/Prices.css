@@ -1,4 +1,4 @@
-#price-card{
+/* #price-card{
     background-image: url("../../Assets/in-the-woods.jpg");
     z-index: -1;
     color:white;
@@ -6,10 +6,28 @@
     text-align: center;
     height:35vh;
     margin-bottom: 4vh;
-    filter: brightness(0.85);
-
-   
+    filter: brightness(0.7);
+} */
+#price-text h3{
+    font-weight: bold;
+    color:black;
 }
 #price-text{
+    color:black;
+    
+    text-align: center;
     padding: 4vh;
+    font-weight: 500;
+ 
+
+    
+}
+#image{
+    border-radius: 2vh;
+    padding:1vh;
+    object-fit: cover;
+    height: 50vh;
+   width: 35vh;
+    filter: brightness(0.7);
+
 }
