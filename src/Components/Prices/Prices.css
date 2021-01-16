@@ -23,7 +23,7 @@
     
 }
 #image{
-    border-radius: 2vh;
+    border-radius: 1.5vh;
     padding:1vh;
     object-fit: cover;
     height: 50vh;
