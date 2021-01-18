@@ -10,7 +10,8 @@
 } */
 #price-text h3{
     font-weight: bold;
-    color:black;
+    color:white;
+    margin-top: 3vh;
 }
 #price-text{
     color:black;
@@ -18,16 +19,18 @@
     text-align: center;
     padding: 4vh;
     font-weight: 500;
- 
-
-    
+    display: flex;
+    z-index: 3;
+    color:white;   
 }
-#image{
-    border-radius: 2vh;
+#container{
+    background-image: url(../../Assets/vegetation-2.jpg);
+    border-radius: 6vh;
     padding:1vh;
     object-fit: cover;
     height: 50vh;
-   width: 35vh;
-    filter: brightness(0.7);
-
+    width: 30vh;
+    filter: brightness(0.75);
+    padding: 2vh;
+    
 }
