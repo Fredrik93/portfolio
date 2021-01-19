@@ -18,19 +18,24 @@
     
     text-align: center;
     padding: 4vh;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     z-index: 3;
     color:white;   
 }
 #container{
-    background-image: url(../../Assets/vegetation-2.jpg);
+    background-image: url(../../Assets/vegetation-1.jpg);
     border-radius: 6vh;
-    padding:1vh;
+
     object-fit: cover;
-    height: 50vh;
-    width: 30vh;
-    filter: brightness(0.75);
+    height: 60vh;
+    width: 32vh;
+    filter: brightness(0.95);
     padding: 2vh;
     
+}
+#items{
+    text-align: left;
+    font-weight: 600;
+
 }

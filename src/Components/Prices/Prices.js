@@ -21,12 +21,15 @@ function Prices(props) {
                         < br />
                         {props.information}
                         <br />
-                        <ul>
+                        <ul id="items" >
                             <li>{props.item1}</li>
                             <li>{props.item2}</li>
                             <li>{props.item3}</li>
                             <li>{props.item4}</li>
                             <li>{props.item5}</li>
+                            <li>{props.item6}</li>
+                            <li>{props.item7}</li>
+                            <li>{props.item8}</li>
                         </ul>
                     </section>
                 </div>
