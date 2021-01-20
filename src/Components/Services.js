@@ -3,6 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import vegetationImage from '../Assets/vegetation-2.jpg'
 import Header from './Header'
 import '../index.css'
+import vegImage2 from '../Assets/vegetation-2.jpg'
+import vegImage1 from '../Assets/vegetation-1.jpg'
+import Lighter from '../Assets/vermont-lighter-2.jpg'
 import Prices from './Prices/Prices'
 function AboutUs() {
 
@@ -18,6 +21,7 @@ function AboutUs() {
 
                     <Col lg={4} md={12} sm={12} xs={12} >
                         <Prices
+                            image={Lighter}
                             title="Basic"
                             price="3000:-"
                             information="Baspaketet. Detta är för dig som vill ha en rent 
@@ -32,6 +36,7 @@ function AboutUs() {
                     </Col>
                     <Col lg={4} md={12} sm={12} xs={12} >
                         <Prices
+                            image={vegImage1}
                             title="Medium"
                             price="5000:-"
                             information="Mediumpaketet. Detta är för dig som vill marknadsföra ditt företag och låta kunder kontakta dig genom hemsidan."
@@ -47,6 +52,7 @@ function AboutUs() {
                     </Col>
                     <Col lg={4} md={12} sm={12} xs={12} >
                         <Prices
+                            image={vegImage2}
                             title="Pro"
                             price="10 000:-"
                             information="Propaketet. detta är för dig som vill erbjuda dina kunder en e-handels plattform att sälja dina produkter på eller beställa take-away mat."
