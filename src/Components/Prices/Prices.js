@@ -20,7 +20,9 @@ function Prices(props) {
 
                     <h3>  {props.title} {props.price} </h3>
                     < br />
+                    < br />
                     {props.information}
+                    <br />
                     <br />
                     <ul id="items" >
                         <li>{props.item1}</li>
