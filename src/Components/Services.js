@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap'
 import Header from './Header'
 import '../index.css'
 import GranRis from '../Assets/granris.jpg'
@@ -16,39 +16,41 @@ function AboutUs() {
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
             <Container>
-                <Card id="card" className="bg-dark text-white">
-                    <Card.Img src={GranRis} alt="Card image" />
-                    <Card.ImgOverlay>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                <CardDeck>
+                    <Card className="bg-dark text-white">
+                        <Card.Img src={GranRis} alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>Card title</Card.Title>
+                            <Card.Text>
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
                       </Card.Text>
-                        <Card.Text>Last updated 3 mins ago</Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
-                <Card id="card" className="bg-dark text-white">
-                    <Card.Img src={GranRis} alt="Card image" />
-                    <Card.ImgOverlay>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                            <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                    </Card>
+                    <Card id="card" className="bg-dark text-white">
+                        <Card.Img src={GranRis} alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>Card title</Card.Title>
+                            <Card.Text>
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
                       </Card.Text>
-                        <Card.Text>Last updated 3 mins ago</Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
-                <Card id="card" className="bg-dark text-white">
-                    <Card.Img src={GranRis} alt="Card image" />
-                    <Card.ImgOverlay>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                            <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                    </Card>
+                    <Card id="card" className="bg-dark text-white">
+                        <Card.Img src={GranRis} alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>Card title</Card.Title>
+                            <Card.Text>
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
                       </Card.Text>
-                        <Card.Text>Last updated 3 mins ago</Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
+                            <Card.Text>Last updated 3 mins ago</Card.Text>
+                        </Card.ImgOverlay>
+                    </Card>
+                </CardDeck>
             </Container>
 
             {/* 
