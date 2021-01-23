@@ -1,4 +1,20 @@
+#image{
+    filter: brightness(0.5);
+    height: 50vh;
+    object-fit: cover;
+}
+#container-card{
+    display: flex;
+    height: 50vh;
+    border: 2px solid black;
+    
+}
+#card{
+    color:white;
+    margin: 1vh;
+}
 
+/* all this stuff can probably go  */
 #price-text h3{
     font-weight: 600;
     color:white;

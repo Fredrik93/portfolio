@@ -15,42 +15,72 @@ function AboutUs() {
                 <h4 >våra produkter</h4>
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
-            <Container>
-                <CardDeck>
-                    <Card className="bg-dark text-white">
-                        <Card.Img src={GranRis} alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+            <Container id="container-card">
+                <Row  >
+                    <Col lg={4} md={12} sm={12} xs={12} >
+                        <Card id="card">
+                            <Card.Img id="image" src={GranRis} alt="Card image" />
+                            <Card.ImgOverlay >
+                                <Card.Title> Basic 3000 :- </Card.Title>
+                                <Card.Text>
+                                    Baspaketet. Detta är för dig som vill ha en rent
+                                    informativ hemsida med till exempel en startsida, en meny och en Om Oss sida.
                       </Card.Text>
-                            <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                    <Card id="card" className="bg-dark text-white">
-                        <Card.Img src={GranRis} alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                <Card.Text>
+                                    <Card.Text>
+                                        <ul>
+                                            <li> Välj mellan ett 10 - tal mallar​</li>
+                                            <li> 3 sidor till hemsidan​</li>
+                                            <li> Assistans med webbhotell​</li>
+                                            <li> Assistans med domän​</li>
+                                            <li> 1 Konsultimma​</li>
+                                        </ul>
+                                    </Card.Text>
+                                </Card.Text>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                    <Col lg={4} md={12} sm={12} xs={12} >
+                        <Card id="card" className="bg-dark text-white">
+                            <Card.Img id="image" src={Barr} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Card.Title>Medium 5000 :-</Card.Title>
+                                <Card.Text>
+                                    Mediumpaketet. Detta är för dig som vill marknadsföra ditt företag och låta kunder kontakta dig genom hemsidan.
                       </Card.Text>
-                            <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                    <Card id="card" className="bg-dark text-white">
-                        <Card.Img src={GranRis} alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
+                                <Card.Text>   <ul>
+                                    <li> Välj mellan ett 10 - tal mallar​</li>
+                                    <li> 5-6 sidor till hemsidan​</li>
+                                    <li> Assistans med webbhotell​</li>
+                                    <li> Assistans med domän​</li>
+                                    <li>Personlig emailadress</li>
+                                    <li> 1 Konsultimma​</li>
+                                    <li>Uppdatering 120 min</li>
+                                    <li>3 Konsultimmar</li>
+                                    <li>Support</li>
+                                </ul></Card.Text>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                    <Col lg={4} md={12} sm={12} xs={12} >
+                        <Card id="card" className="bg-dark text-white">
+                            <Card.Img id="image" src={BarrOnIce} alt="Card image" />
+                            <Card.ImgOverlay>
+                                <Card.Title>Pro 10 000 :-</Card.Title>
+                                <Card.Text>
+                                    Propaketet. Detta är för dig som vill erbjuda dina kunder en e-handels plattform att sälja dina produkter på eller beställa take-away mat.
                       </Card.Text>
-                            <Card.Text>Last updated 3 mins ago</Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
-                </CardDeck>
+                                <Card.Text>   <ul>
+                                    <li> Välj mellan ett 10 - tal mallar​</li>
+                                    <li> 3 sidor till hemsidan​</li>
+                                    <li> Assistans med webbhotell​</li>
+                                    <li> Assistans med domän​</li>
+                                    <li> 1 Konsultimma​</li>
+                                </ul></Card.Text>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                </Row>
             </Container>
 
             {/* 
