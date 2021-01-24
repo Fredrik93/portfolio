@@ -1,6 +1,6 @@
 .links{
     color: black;
-    text-decoration: none;
+    text-decoration: none; 
     list-style-type: none;
     
 }
@@ -23,4 +23,17 @@
 }
 #footer-links{
     text-align: center!important;
+}
+#layout{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10vh;
+    
+    
+    /* position: "relative",
+    textAlign: "center",
+    color: "white",
+    marginTop: "2vh" */
 }
