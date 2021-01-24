@@ -16,7 +16,7 @@ function Footer(props) {
     return (
         <Fragment>
 
-            <div id="layout"  >
+            <div style={startPageLayout} >
                 <Row style={{ backgroundColor: "#eee" }}>
                     <Col xs={12} sm={12} md={12} lg={4} style={{ marginTop: "4vh" }} >
                         <img style={{ marginBottom: "1vh" }} src={logo} alt="uiclogo" />
