@@ -1,21 +1,28 @@
 import React, { Fragment } from 'react'
 import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap'
 import Header from './Header'
-import '../index.css'
+import '../Styles/Services.css'
 import GranRis from '../Assets/granris.jpg'
 import Barr from '../Assets/barr.jpg'
 import BarrOnIce from '../Assets/is-på-barr.jpg'
-import Prices from './Prices/Prices'
-function AboutUs() {
+import Prices from '../Styles/Services.css'
+function Services() {
 
     return (
         <Fragment>
-            <Header headerText="Om Oss" image={GranRis} />
+            <Header headerText="Tjänster" image={GranRis} />
             <div style={{ textAlign: "center", margin: "10vh" }}  >
                 <h4 >våra produkter</h4>
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
-            <Container id="container-card">
+            <Container id="cards" >
+                <Row >
+                    <Col>1</Col>
+                    <Col>2</Col>
+                    <Col>3</Col>
+                </Row>
+            </Container>
+            {/* <Container id="container-card">
                 <Row  >
                     <Col lg={4} md={12} sm={12} xs={12} >
                         <Card id="card">
@@ -81,7 +88,7 @@ function AboutUs() {
                         </Card>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
 
             {/* 
             <Container>
@@ -141,4 +148,4 @@ function AboutUs() {
         </Fragment >
     )
 }
-export default AboutUs
+export default Services
