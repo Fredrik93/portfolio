@@ -16,10 +16,24 @@ function Services() {
                 <p> Vi erbjuder tre olika paket till riktigt bra priser.  </p>
             </div>
             <Container id="cards" >
-                <Row >
-                    <Col>1</Col>
-                    <Col>2</Col>
-                    <Col>3</Col>
+                <Row className="justify-content-md-center" >
+                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
+                        <Card>
+                            <Card.Img src={GranRis} alt="price image " />
+                        </Card>
+                    </Col>
+                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
+                        <Card>
+                            <Card.Img src={GranRis} alt="price image " />
+                        </Card>
+                    </Col>
+                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
+                        <Card>
+                            <Card.Img src={GranRis} alt="price image " />
+                        </Card>
+                    </Col>
+
+
                 </Row>
             </Container>
             {/* <Container id="container-card">
