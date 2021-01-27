@@ -17,19 +17,27 @@ function Services() {
             </div>
             <Container id="cards" >
                 <Row className="justify-content-md-center" >
-                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
-                        <Card>
-                            <Card.Img src={GranRis} alt="price image " />
+                    <Col xlg={4} lg={4} md={12} sm={12}  >
+                        <Card id="card" >
+                            <Card.Img id="image" src={GranRis} alt="price image " />
+
+                            <Card.Body id="textbody" >
+                                <Card.Title> Basic 3000 :- </Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                            </Card.Body>
                         </Card>
                     </Col>
-                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
-                        <Card>
-                            <Card.Img src={GranRis} alt="price image " />
+                    <Col xlg={4} lg={4} md={12} sm={12} >
+                        <Card id="card" >
+                            <Card.Img id="image" src={GranRis} alt="price image " />
                         </Card>
                     </Col>
-                    <Col xlg={4} lg={4} md={4} sm={12} id="card" >
-                        <Card>
-                            <Card.Img src={GranRis} alt="price image " />
+                    <Col xlg={4} lg={4} md={12} sm={12}>
+                        <Card id="card" >
+                            <Card.Img id="image" src={GranRis} alt="price image " />
                         </Card>
                     </Col>
 
