@@ -17,3 +17,7 @@ border: 2px solid black;
 #textbody{
     font-size: 2px;
 }
+#list{
+    border: 2px solid black;
+    margin-bottom: 10vh;
+}
