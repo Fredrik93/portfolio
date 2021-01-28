@@ -3,16 +3,17 @@
 border: 2px solid black;
 
 }
-/* #card{
+#card{
     border: 2px solid black;
     margin-bottom: 2vh;
-    height: 70vh;
+    height: 50vh;
+    color: white;
 }
 #image{
-    height: 70vh;
-    object-fit: auto;
+    height: 50vh;
+    object-fit: cover;
     filter:brightness(0.6);
-} */
+}
 #textbody{
     font-size: 2px;
 }
