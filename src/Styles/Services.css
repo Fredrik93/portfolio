@@ -19,5 +19,13 @@ border: 2px solid black;
 }
 #list{
     border: 2px solid black;
-    margin-bottom: 10vh;
+   list-style-type:circle;
+}
+@media screen and (max-width: 800px) {
+    #card{
+        height:70vh;
+    }
+    #image{
+        height: 70vh;
+    }
 }
