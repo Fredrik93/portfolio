@@ -26,8 +26,8 @@ function Services() {
                                     Baspaketet. Detta är för dig som vill ha en rent
                                     informativ hemsida med till exempel en startsida, en meny och en Om Oss sida.
                                 </Card.Text>
-                                <Card.Text id="list" >
-                                    <ul>
+                                <Card.Text >
+                                    <ul id="list"  >
                                         <li> Välj mellan ett 10 - tal mallar​</li>
                                         <li> 3 sidor till hemsidan​</li>
                                         <li> Assistans med webbhotell​</li>
@@ -47,8 +47,8 @@ function Services() {
                                     Mediumpaketet. Detta är för dig som vill marknadsföra ditt företag och låta kunder kontakta dig genom hemsidan med t.ex en galleri-sida.
                                     
                                 </Card.Text>
-                                <Card.Text id="list" >
-                                    <ul>
+                                <Card.Text>
+                                    <ul id="list" >
                                         <li> Välj mellan ett 10 - tal mallar​</li>
                                         <li> 5-6 sidor till hemsidan​</li>
                                         <li> Assistans med webbhotell​</li>
@@ -74,7 +74,7 @@ function Services() {
                                     Propaketet. Detta är för dig som vill erbjuda dina kunder en e-handels plattform att sälja dina produkter på eller beställa take-away mat.
                       </Card.Text>
                                 <Card.Text id="list" >
-                                    <ul>
+                                    <ul id="list" >
                                         <li> Välj mellan ett 10 - tal mallar​</li>
                                         <li> 5-6 sidor till hemsidan</li>
                                         <li> Assistans med webbhotell​</li>

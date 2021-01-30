@@ -14,12 +14,10 @@ border: 2px solid black;
     object-fit: cover;
     filter:brightness(0.6);
 }
-#textbody{
-    font-size: 2px;
-}
 #list{
     border: 2px solid black;
-   list-style-type:circle;
+    list-style-type:square;
+ 
 }
 @media screen and (max-width: 800px) {
     #card{
