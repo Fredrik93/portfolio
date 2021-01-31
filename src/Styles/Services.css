@@ -1,16 +1,17 @@
 
 #cards{
 border: 2px solid black;
+margin-bottom: 10vh;
 
 }
 #card{
     border: 2px solid black;
     margin-bottom: 2vh;
-    height: 50vh;
+    height: 60vh;
     color: white;
 }
 #image{
-    height: 50vh;
+    height: 60vh;
     object-fit: cover;
     filter:brightness(0.6);
 }
@@ -19,11 +20,16 @@ border: 2px solid black;
     list-style-type:square;
  
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     #card{
-        height:70vh;
+        height: 60vh;
+        width: 50vh;
+        margin: auto;
+        
+     
     }
     #image{
         height: 70vh;
+       
     }
 }
