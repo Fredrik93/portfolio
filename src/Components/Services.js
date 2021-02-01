@@ -63,7 +63,7 @@ function Services() {
                             </Card.ImgOverlay>
                         </Card>
                     </Col>
-
+                    
 
                     <Col xlg={4} lg={4} md={12} sm={12}  >
                         <Card id="card" >
@@ -73,7 +73,7 @@ function Services() {
                                 <Card.Text>
                                     Propaketet. Detta är för dig som vill erbjuda dina kunder en e-handels plattform att sälja dina produkter på eller beställa take-away mat.
                       </Card.Text>
-                                <Card.Text id="list" >
+                                <Card.Text >
                                     <ul id="list" >
                                         <li> Välj mellan ett 10 - tal mallar​</li>
                                         <li> 5-6 sidor till hemsidan</li>
