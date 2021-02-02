@@ -21,7 +21,7 @@ function Services() {
                         <Card id="card" >
                             <Card.Img id="image" src={GranRis} alt="price image " />
                             <Card.ImgOverlay>
-                                <Card.Title> Basic 3000 :- </Card.Title>
+                                <Card.Title id="title" > Basic 3000 :- </Card.Title>
                                 <Card.Text>
                                     Baspaketet. Detta är för dig som vill ha en rent
                                     informativ hemsida med till exempel en startsida, en meny och en Om Oss sida.
@@ -42,7 +42,7 @@ function Services() {
                         <Card id="card" >
                             <Card.Img id="image" src={Barr} alt="price image " />
                             <Card.ImgOverlay>
-                                <Card.Title>Medium 5000 :-</Card.Title>
+                                <Card.Title id="title" >Medium 5000 :-</Card.Title>
                                 <Card.Text>
                                     Mediumpaketet. Detta är för dig som vill marknadsföra ditt företag och låta kunder kontakta dig genom hemsidan med t.ex en galleri-sida.
                                     
@@ -69,7 +69,7 @@ function Services() {
                         <Card id="card" >
                             <Card.Img id="image" src={GranRis} alt="price image " />
                             <Card.ImgOverlay>
-                                <Card.Title> Pro 10 000 :- </Card.Title>
+                                <Card.Title id="title" > Pro 10 000 :- </Card.Title>
                                 <Card.Text>
                                     Propaketet. Detta är för dig som vill erbjuda dina kunder en e-handels plattform att sälja dina produkter på eller beställa take-away mat.
                       </Card.Text>
