@@ -14,19 +14,30 @@ function Footer(props) {
         // justifyContent: "center",
     }
     return (
-        <Fragment >
-            <div id="container" >
-                <Row  >
-                    <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
-                        1
-                    </Col>
-                    <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
-                        2
-                    </Col>
-                    <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >3</Col>
-                </Row>
-            </div>
-        </Fragment>
+        <div className="footer" >
+            <Row  >
+                <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
+                    1
+                     </Col>
+                <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
+                    2
+                     </Col>
+                <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >3</Col>
+            </Row>
+        </div>
+        // <Fragment >
+        //     <div id="container" >
+        //         <Row  >
+        //             <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
+        //                 1
+        //             </Col>
+        //             <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
+        //                 2
+        //             </Col>
+        //             <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >3</Col>
+        //         </Row>
+        //     </div>
+        // </Fragment>
         // <Fragment>
 
         //     <div style={startPageLayout} >
