@@ -25,11 +25,13 @@
     /* text-align: center!important; */
 }
 #container{
-    text-align: center;
+   text-align: center;
    border:2px solid black;
    background-color: #eee;
-   
+    
 }
+
 .footer {
-   
+   width: 100%;
+
  }

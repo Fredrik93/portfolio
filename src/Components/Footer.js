@@ -14,6 +14,7 @@ function Footer(props) {
         // justifyContent: "center",
     }
     return (
+
         <div className="footer" >
             <Row  >
                 <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
@@ -25,6 +26,7 @@ function Footer(props) {
                 <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >3</Col>
             </Row>
         </div>
+
         // <Fragment >
         //     <div id="container" >
         //         <Row  >
