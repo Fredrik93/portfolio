@@ -16,13 +16,13 @@ function Footer(props) {
     return (
 
         <div className="footer" >
-            <Row  >
-                <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
+            <Row>
+                <Col style={{ width: "5vh", border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
                     1
-                     </Col>
+                </Col>
                 <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
                     2
-                     </Col>
+                </Col>
                 <Col style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >3</Col>
             </Row>
         </div>
