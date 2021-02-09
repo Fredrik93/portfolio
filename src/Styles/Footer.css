@@ -22,7 +22,7 @@
     text-decoration: none;
 }
 #footer-links{
-    /* text-align: center!important; */
+     text-align: center!important; 
 }
 #container{
    text-align: center;
@@ -31,7 +31,5 @@
     
 }
 
-.footer {
-  border: 1px solid black;
-  margin-left: 0.1vh;
- }
+
+
