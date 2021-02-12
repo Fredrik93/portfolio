@@ -17,6 +17,7 @@ function Footer(props) {
     return (
 
         <Fragment >
+
             <div id="container" >
                 <Row >
                     <Col id="col" style={{ border: "1px solid black" }} xs={12} sm={12} md={12} lg={4} >
