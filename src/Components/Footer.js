@@ -9,7 +9,7 @@ function Footer(props) {
         position: "relative",
         textAlign: "center",
         color: "white",
-        marginTop: "2vh",
+        marginTop: "2.5vh",
         display: "flex",
         justifyContent: "center",
 
