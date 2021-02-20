@@ -20,7 +20,7 @@ function Footer(props) {
 
             <div id="container" >
                 <Row >
-                    <Col id="col" style={{ border: "1px solid black" }} xs={12} sm={12} md={12} lg={4} >
+                    <Col id="col" style={{ border: "2px solid black" }} xs={12} sm={12} md={12} lg={4} >
                         <img style={{ marginBottom: "1vh" }} src={logo} alt="uiclogo" />
                         < br />
                         <a id="icons" target="_blank" rel="noreferrer" href="https://github.com/Fredrik93"> <i className="fa fa-github" ></i> </a>
