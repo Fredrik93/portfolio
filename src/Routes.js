@@ -8,6 +8,7 @@ import { Todos } from './Components/Todos';
 import UnderMaintenance from './Components/UnderMaintenance';
 import Timer from './Components/Pomodoro/Timer';
 import secondCounter from './Components/secondCounter'
+import AllProjects from './Components/AllProjects';
 function Routes() {
     return (
         <Fragment>
@@ -21,6 +22,7 @@ function Routes() {
                 <Route path="/under-maintenance" component={UnderMaintenance} />
                 <Route path="/timer" component={Timer} />
                 <Route path="/secondCounter"  component={secondCounter} />
+                <Route path="/all-projects" component={AllProjects}/>
             </Switch>
         </Fragment>
     )
