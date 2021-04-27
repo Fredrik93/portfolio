@@ -46,6 +46,11 @@ class AllProjects extends React.Component{
                 projectImg={clock}
                 projectUrl="/timer"
             />
+             <Card
+                projectName="A second timer for practice"
+                projectImg={defaultImage}
+                projectUrl="/secondCounter"
+            />
         </div>
         )
     }

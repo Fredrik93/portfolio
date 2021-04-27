@@ -88,7 +88,7 @@ function Home() {
                 marginTop: "3vh",
                 marginBottom: "10vh"
             }} >
-                <Link to="/under-maintenance"  >
+                <Link to="/all-projects"  >
                     <button
                         className="btn btn-lg "
                         id="historyBtn" >Alla projekt
