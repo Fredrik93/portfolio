@@ -10,11 +10,25 @@ import { Col, Row, Button, Container } from 'react-bootstrap';
 class secondCounter extends React.Component {
     constructor(){
         super()
+        this.state= {
+            counter: 0,
+            anotherCounter:2
+        }
         this.count = this.count.bind(this)
+        
     }
 
     count() {
+
         console.log("working")
+        this.setState(prevState =>{
+            return{
+                counter: prevState.counter +1 
+                
+            }
+            
+        })
+    
     }
     render(){
 
@@ -22,15 +36,15 @@ class secondCounter extends React.Component {
         var styling= {
             textAlign:"center", marginTop:"10vh"
         }
-        var count = 1;
+        
         return(
             <Fragment>
             <Header headerText="Second Counter" image={inTheWoods} />
-            <Container>
-           <div style={styling} >
-               Counter: {count}
+            <Container style={styling} >
+                <div style={{marginBottom:"2vh"}}>
+               Counter: {this.state.counter}
                </div>
-               <Button style={styling} variant="secondary" onClick={this.count} >Click dis</Button>    
+               <Button variant="secondary" onClick={this.count} >Click dis</Button>    
 
                </Container>
                
