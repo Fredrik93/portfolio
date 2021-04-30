@@ -8,7 +8,17 @@ import { Col, Row, Button, Container } from 'react-bootstrap';
 
 
 class secondCounter extends React.Component {
+    constructor(){
+        super()
+        this.count = this.count.bind(this)
+    }
+
+    count() {
+        console.log("working")
+    }
     render(){
+
+       
         var styling= {
             textAlign:"center", marginTop:"10vh"
         }
@@ -20,7 +30,7 @@ class secondCounter extends React.Component {
            <div style={styling} >
                Counter: {count}
                </div>
-               <Button style={styling} variant="secondary" onClick={()=>{console.log("clicked")}} >Click dis</Button>    
+               <Button style={styling} variant="secondary" onClick={this.count} >Click dis</Button>    
 
                </Container>
                
