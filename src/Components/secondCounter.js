@@ -22,9 +22,12 @@ class secondCounter extends React.Component {
 
         console.log("working")
         this.setState(prevState =>{
+          
             return{
                 counter: prevState.counter +1 
-                
+            }
+            if(prevState.counter === 5){
+                console.log("prevState.counter is " + prevState.counter)
             }
             
         })
