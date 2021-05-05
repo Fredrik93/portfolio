@@ -22,13 +22,13 @@ class secondCounter extends React.Component {
 
         console.log("working")
         this.setState(prevState =>{
-          
-            return{
-                counter: prevState.counter +1 
-            }
             if(prevState.counter === 5){
                 console.log("prevState.counter is " + prevState.counter)
             }
+            return{
+                counter: prevState.counter +1 
+            }
+          
             
         })
     
@@ -45,7 +45,7 @@ class secondCounter extends React.Component {
             <Header headerText="Second Counter" image={inTheWoods} />
             <Container style={styling} >
                 <div style={{marginBottom:"2vh"}}>
-               Counter: {this.state.counter}
+               Count: {this.state.counter}
                </div>
                <Button variant="secondary" onClick={this.count} >Click dis</Button>    
 
