@@ -12,7 +12,6 @@ class secondCounter extends React.Component {
         super()
         this.state= {
             counter: 0,
-            anotherCounter:2
         }
         this.count = this.count.bind(this)
         
