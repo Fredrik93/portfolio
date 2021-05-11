@@ -25,7 +25,7 @@ class Timer extends React.Component {
     //fetch the xp from database that belongs to user 
     componentDidMount() {
 
-        fetch("http://localhost:4000/users/5fe9eaa992bdf041ed2d403f")
+        fetch("http://localhost:4000/users/609a7357f656172ade6cebca")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -90,7 +90,7 @@ class Timer extends React.Component {
 
     saveExperience() {
         this.dailyStreak()
-        fetch('http://localhost:4000/users/updatexp/5fe9eaa992bdf041ed2d403f', {
+        fetch('http://localhost:4000/users/updatexp/609a7357f656172ade6cebca', {
             method: 'PATCH',
             headers: {
                 'Accept': 'application/json',
