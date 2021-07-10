@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 
 
-function ApiStuff () {
+function PlantsAPI () {
 
 
 
@@ -14,4 +14,4 @@ function ApiStuff () {
  )
 }
 
-export default ApiStuff
+export default PlantsAPI
