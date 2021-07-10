@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 
@@ -11,6 +12,7 @@ useEffect(()=>{
   .then(response => response.json())
   .then((data)=>{
     setPlants(data)
+    setIsLoading(false)
   })
 
 },[])
@@ -35,17 +37,22 @@ useEffect(()=>{
     })
   
  return (
-  <div style={{marginTop:"20vh", textAlign:"center"}} >
-  
+<Container style={{border:"2px solid black", display:"flex", marginTop:"20vh", justifyContent:"center", padding:"5vh"}}  >
+  <Row style={{border:"2px solid green"}}  >
+    <Col style={{border:"2px solid pink"}}  >    {isLoading ? "Loading..." : el}
+</Col>
+  </Row>
+</Container>
+
+   
+
  
-   <h1> API calls with React Hooks </h1>
-    {el}
 
  
 
   
       
- </div>
+
  )
 }
 
